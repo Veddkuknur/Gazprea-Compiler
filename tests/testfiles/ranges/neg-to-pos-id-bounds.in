@@ -1,0 +1,10 @@
+procedure main() returns integer {
+
+    integer i = -25;
+
+    integer [*] a = i..5;
+    a -> std_output;
+    return 0;
+}
+
+//CHECK:[-25 -24 -23 -22 -21 -20 -19 -18 -17 -16 -15 -14 -13 -12 -11 -10 -9 -8 -7 -6 -5 -4 -3 -2 -1 0 1 2 3 4 5]

@@ -1,0 +1,13 @@
+procedure main() returns integer {
+    var integer i;
+    integer j = -2;
+    const integer k = 3;
+    i=1;
+    i->std_output;
+    j->std_output;
+    k->std_output;
+    return 0;
+}
+
+//CHECK_FILE:declareIntegers.out
+

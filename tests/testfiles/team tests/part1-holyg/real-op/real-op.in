@@ -1,0 +1,30 @@
+procedure main() returns integer {
+    (1.0) -> std_output; '\n' -> std_output;
+    1.0 + 2.0 -> std_output; '\n' -> std_output;
+    1.0 - 2.0 -> std_output; '\n' -> std_output;
+    1.0 * 2.0 -> std_output; '\n' -> std_output;
+    1.0 / 2.0 -> std_output; '\n' -> std_output;
+    1.0 % 2.0 -> std_output; '\n' -> std_output;
+    2.0^1.0 -> std_output; '\n' -> std_output;
+    -1.0 -> std_output; '\n' -> std_output;
+    +1.0 -> std_output; '\n' -> std_output;
+    1.0 < 2.0 -> std_output; '\n' -> std_output;
+    2.0 < 1.0 -> std_output; '\n' -> std_output;
+    2.0 > 1.0 -> std_output; '\n' -> std_output;
+    1.0 > 2.0 -> std_output; '\n' -> std_output;
+    1.0 <= 2.0 -> std_output; '\n' -> std_output;
+    2.0 <= 1.0 -> std_output; '\n' -> std_output;
+    2.0 >= 1.0 -> std_output; '\n' -> std_output;
+    1.0 >= 2.0 -> std_output; '\n' -> std_output;
+    1.0 >= 1.0 -> std_output; '\n' -> std_output;
+    1.0 <= 1.0 -> std_output; '\n' -> std_output;
+    1.0 > 1.0 -> std_output; '\n' -> std_output;
+    1.0 < 1.0 -> std_output; '\n' -> std_output;
+    1.0 == 1.0 -> std_output; '\n' -> std_output;
+    1.0 == 2.0 -> std_output; '\n' -> std_output;
+    1.0 != 1.0 -> std_output; '\n' -> std_output;
+    1.0 != 2.0 -> std_output; '\n' -> std_output;
+    return 0;
+}
+
+// CHECK_FILE:test.out

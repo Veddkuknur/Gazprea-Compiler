@@ -1,0 +1,9 @@
+procedure main() returns integer {
+    1e99 -> std_output;
+    -1e99 -> std_output;
+    -1 * 1e99 -> std_output;
+    +1e99 -> std_output;
+    return 0;
+}
+
+// CHECK_FILE:test.out

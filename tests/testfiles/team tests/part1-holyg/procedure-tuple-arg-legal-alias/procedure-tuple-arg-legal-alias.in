@@ -1,0 +1,14 @@
+procedure f(tuple(integer, integer) x, integer y) {
+    return;
+}
+
+procedure main() returns integer {
+    tuple(integer, integer) t = (2, 4);
+
+    call f(t, t.1);
+    7 -> std_output;
+
+    return 0;
+}
+
+// CHECK_FILE:test.out

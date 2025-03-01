@@ -1,0 +1,12 @@
+typedef tuple(integer a, integer, real, boolean, character hi_there) tup;
+
+typedef tup tup_alias;
+
+typedef tuple(integer a, tup_alias, tup, real, character) nested;
+
+procedure main() returns integer {
+
+    return 0;
+}
+
+//CHECK_FILE:test1.out

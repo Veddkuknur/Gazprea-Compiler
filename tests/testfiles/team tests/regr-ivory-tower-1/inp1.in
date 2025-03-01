@@ -1,0 +1,19 @@
+// TOOD: need to do testing with CE, unsure if boolean is right or not
+// dedicating to ensuring correct value on failure to read
+procedure main() returns integer {
+	integer i = 100;
+	real r = 2e12;
+	boolean b = true;
+
+	b <- std_input; // should fail BUT consume and leave stream empty
+	r <- std_input;
+	i <- std_input;
+
+	b -> std_output;
+	r -> std_output;
+	i -> std_output;
+
+	return 0;
+}
+//INPUT:X
+//CHECK:F00

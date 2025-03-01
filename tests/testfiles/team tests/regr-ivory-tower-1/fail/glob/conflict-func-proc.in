@@ -1,0 +1,12 @@
+procedure foo(var integer x) returns integer {
+    return x + 1;
+}
+
+procedure main() returns integer {
+    return 0;
+}
+
+function foo(integer x) returns integer {
+    return x + 1;
+}
+//CHECK:TypeError on Line 9:

@@ -1,0 +1,31 @@
+procedure main() returns integer {
+    tuple(integer a, real b) foo = (1, 2);
+    tuple(real c, real) bar = foo;
+    tuple(real a, real b) foo1 = (1, 2);
+    tuple(real c, real d) bar2 = (3, 4);
+    var baz = foo1;
+
+    baz.a -> std_output; '\n' -> std_output;
+    baz.b -> std_output; '\n' -> std_output;
+
+    baz = bar2;
+    baz.a -> std_output; '\n' -> std_output;
+    baz.b -> std_output; '\n' -> std_output;
+
+    foo.a -> std_output; '\n' -> std_output;
+    foo.b -> std_output; '\n' -> std_output;
+
+    bar.c -> std_output; '\n' -> std_output;
+    bar.2 -> std_output;
+
+    return 0;
+}
+
+//CHECK:1
+//CHECK:2
+//CHECK:3
+//CHECK:4
+//CHECK:1
+//CHECK:2
+//CHECK:1
+//CHECK:2

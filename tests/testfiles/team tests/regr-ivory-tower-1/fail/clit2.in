@@ -1,0 +1,5 @@
+procedure main() returns integer {
+	char c = '\';
+	return 0;
+}
+//CHECK:SyntaxError on Line 2:

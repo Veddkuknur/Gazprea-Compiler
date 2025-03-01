@@ -1,0 +1,6 @@
+procedure main() returns integer {
+    { procedure pain() returns integer { return 0; } }
+    return 0;
+}
+
+// CHECK_FILE:test.out

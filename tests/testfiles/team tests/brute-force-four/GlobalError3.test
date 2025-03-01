@@ -1,0 +1,14 @@
+function bigMath(real x, real y, real z) returns real {
+    return x + y + z;
+}
+
+const real i = bigMath(1,2,3);
+
+procedure main() returns integer {
+    bigMath(10, 20, 30) -> std_output;
+
+    return 0;
+}
+
+
+// CHECK:GlobalError on Line 5

@@ -1,0 +1,8 @@
+procedure main() returns integer {
+    integer a = 7;
+    if (a == 7) a = 3;
+    a -> std_output;
+    return 0;
+}
+
+// CHECK_FILE:test.out

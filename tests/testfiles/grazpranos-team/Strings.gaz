@@ -1,0 +1,16 @@
+procedure main() returns integer {
+    string message = "The cat said \"Meow!\"\nThat was a good day.\n";
+    character[*] vec = "hello world\n";
+    character[*] vec2 = ['a', 'b'];
+    string result2 = vec2 || "cd";
+    string result3 = "hi" || [' ', 't', 'h', 'e', 'r', 'e'] || '!';
+
+
+    message -> std_output;
+    vec -> std_output;
+    result2 -> std_output;
+    result3 -> std_output;
+    return 0;
+}
+
+//CHECK_FILE:string.out

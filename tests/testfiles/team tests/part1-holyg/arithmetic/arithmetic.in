@@ -1,0 +1,13 @@
+procedure main() returns integer {
+    integer i = 1;
+    integer j = 10;
+    integer k = 7;
+    1+4 * (3/2) -> std_output; '\n' -> std_output;
+    i + j / 5 - 5 -> std_output; '\n' -> std_output;
+    2*3 + 20/5 + 6*7 -> std_output; '\n' -> std_output;
+    1+4 * 7+5 * (3/2) -> std_output; '\n' -> std_output;
+    2*2 * (100 + 50 - 25 * (3+k+1+k * (3 / 2) * ( ( 10 + 5 ) - 5) ) ) -> std_output;
+    return 0;
+}
+
+// CHECK_FILE:test.out

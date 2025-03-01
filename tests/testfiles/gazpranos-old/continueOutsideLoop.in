@@ -1,0 +1,37 @@
+const integer a = 1;
+function times(integer x, integer y, integer z) returns integer {
+    integer a = 1;
+    integer x = x;
+    integer y = y;
+    integer z = z;
+    a = a +1;
+    x = x+y+z;
+    return a;
+}
+{
+    integer a = 1;
+}
+function times_two(integer x) returns integer {
+    integer a = 1;
+    loop {
+        break;
+        continue;
+    }
+    a = a +1;
+    return a;
+}
+procedure main() returns integer {
+    if (true){
+        if(false){
+
+                              {
+                                  continue;
+                              }
+
+        }
+
+    }
+    return 0;
+}
+
+//CHECK_FILE:continueOutsideLoop.out

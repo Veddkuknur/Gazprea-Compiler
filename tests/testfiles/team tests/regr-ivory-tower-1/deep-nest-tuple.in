@@ -1,0 +1,24 @@
+typedef integer int;
+typedef character char;
+
+procedure main() returns integer {
+    tuple(int i, char) t = (0, 'c');
+    loop while (t.i < 10) {
+        tuple(int j, char) u = (0, 'x');
+        t.i = t.i + 1;
+        loop while (u.j < 100) {
+            tuple(int k, boolean) v = (0, false);
+            u.j = u.j + 1;
+            loop while (v.k < 1000) {
+                tuple (int h, char) w = (0, 'a');
+                v.k = v.k + 1;
+                loop while (w.h < 1000) {
+                    w.h = w.h + 1;
+                }
+            }
+        }
+    }
+    t.i -> std_output;
+    return 0;
+}
+//CHECK:10

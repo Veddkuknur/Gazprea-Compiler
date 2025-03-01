@@ -1,0 +1,10 @@
+/* Forward declaration, no body */
+
+procedure main() returns integer {
+  call p();
+  /* Can use this in main, even though the definition is below */
+  return 0;
+}
+
+
+//CHECK_FILE:otherFuncSymbolErr.out

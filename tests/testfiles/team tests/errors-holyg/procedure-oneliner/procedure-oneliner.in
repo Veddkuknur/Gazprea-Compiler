@@ -1,0 +1,7 @@
+procedure test() returns integer = 0;
+
+procedure main() returns integer {
+    return test();
+}
+
+// CHECK_FILE:test.out

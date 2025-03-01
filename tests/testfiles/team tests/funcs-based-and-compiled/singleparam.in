@@ -1,0 +1,13 @@
+function foo(integer x) returns integer {
+    return x * 2;
+}
+
+procedure main() returns integer {
+    foo(1) -> std_output;
+
+    '\n' -> std_output;
+
+    return 0;
+}
+
+//CHECK_FILE:singleparam.out

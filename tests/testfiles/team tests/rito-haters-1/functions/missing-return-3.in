@@ -1,0 +1,8 @@
+// Checks that this isn't considered fully closed.
+
+procedure main() returns integer {
+    if (false) {
+        return 3;
+    }
+}
+//CHECK:ReturnError on Line 3

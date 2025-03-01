@@ -1,0 +1,11 @@
+procedure f(boolean i) returns boolean {
+    return i;
+}
+
+procedure main() returns integer {
+    boolean x = not f(false);
+    x -> std_output;
+    return 0;
+}
+
+// CHECK_FILE:test.out

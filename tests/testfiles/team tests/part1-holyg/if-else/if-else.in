@@ -1,0 +1,14 @@
+procedure main() returns integer {
+    integer a = 7;
+    if (a != 7) {
+        1 -> std_output;
+        1 -> std_output;
+    } else {
+        0 -> std_output;
+        0 -> std_output;
+    }
+    a -> std_output;
+    return 0;
+}
+
+// CHECK_FILE:test.out

@@ -1,0 +1,9 @@
+// This test ensures your subprocedure checks for the right return value.
+procedure test() {
+    return false;
+}
+
+procedure main() returns integer {
+    return 0;
+}
+//CHECK:StatementError on Line 3

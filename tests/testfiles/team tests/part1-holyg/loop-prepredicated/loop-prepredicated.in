@@ -1,0 +1,10 @@
+procedure main() returns integer {
+    integer i = 0;
+    loop while (i < 20) {
+        i = i + 2;
+        i -> std_output; '\n' -> std_output;
+    }
+    return 0;
+}
+
+// CHECK_FILE:test.out

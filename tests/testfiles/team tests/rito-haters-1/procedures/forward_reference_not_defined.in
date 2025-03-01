@@ -1,0 +1,14 @@
+// Checks that the procedure errors because c was called without the prototype first.
+
+procedure main() returns integer {
+    call c();
+    return 0;
+}
+
+procedure c();
+
+procedure c() {
+    'S' -> std_output;
+}
+
+//CHECK:SymbolError on Line 4

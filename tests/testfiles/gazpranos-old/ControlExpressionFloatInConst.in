@@ -1,0 +1,14 @@
+function lol() returns boolean {
+
+    return true;
+}
+
+const a = 1.1;
+
+procedure main() returns integer {
+    if (a){
+    }
+    return 0;
+}
+
+//CHECK_FILE:ControlExpressionFloatInConst.out

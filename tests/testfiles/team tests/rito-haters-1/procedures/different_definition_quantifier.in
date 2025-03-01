@@ -1,0 +1,13 @@
+//By default procedures have a CONST qualifier unless otherwise specified. So check that we also handle that.
+procedure test(integer a);
+
+procedure test(var integer c) {
+    c -> std_output;
+}
+
+procedure main() returns integer {
+    call test(5);
+    return 0;
+}
+
+//CHECK:TypeError on Line 4

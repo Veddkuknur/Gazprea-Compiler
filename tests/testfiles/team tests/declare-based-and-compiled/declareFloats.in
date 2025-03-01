@@ -1,0 +1,21 @@
+procedure main() returns integer {
+    var real a;
+    real b = 2;
+    const real c = 3.01;
+    real d = 3.14159265358979;
+    real e = .2;
+    real f =24.;
+
+
+    d=14.0e2;
+    a=12e-2;
+    a->std_output;
+    b->std_output;
+    c->std_output;
+    d->std_output;
+    e->std_output;
+    f->std_output;
+    return 0;
+}
+
+//CHECK_FILE:declareFloats.out

@@ -1,0 +1,25 @@
+procedure fib(integer n) returns integer {
+
+    integer val1;
+    integer val2;
+
+    if (n <= 1) {
+        return n;
+    }
+    val1 = fib(n - 1);
+    val2 = fib(n - 2);
+    return val1 + val2;
+
+}
+
+procedure main() returns integer {
+
+    integer fib = fib(10);
+
+    fib -> std_output;
+    '\n' -> std_output;
+
+    return 0;
+}
+
+//CHECK_FILE:fail1.out

@@ -1,0 +1,20 @@
+/* Forward declaration, no body */
+function f(integer y, integer x) returns integer;
+
+
+
+procedure main() returns integer {
+  integer b = 24;
+  integer d = 2;
+  integer z = 4;
+  integer c = b + a;
+  integer y = f(13, c);
+  /* Can use this in main, even though the definition is below */
+  return 0;
+}
+
+function f(integer x, integer z) returns integer {
+
+    return x*z;
+}
+//CHECK_FILE:badAssign2.out

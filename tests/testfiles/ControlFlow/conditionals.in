@@ -1,0 +1,28 @@
+procedure main() returns integer {
+    integer i = 20;
+    integer j = 25;
+    if (false) {
+        integer i = 0;
+        2 ->std_output;
+    } else if (false) {
+
+        3 -> std_output;
+    } else {
+
+        integer i = 6969;
+        if (0 == 0) {
+            boolean j = i < j;
+            j -> std_output;
+        } else {
+            integer i = 420;
+            i -> std_output;
+            j = 22;
+        }
+        696969 -> std_output;
+        j = 22232425;
+    }
+    i -> std_output;
+    j -> std_output;
+    return 0;
+}
+//CHECK_FILE:conditionals.out

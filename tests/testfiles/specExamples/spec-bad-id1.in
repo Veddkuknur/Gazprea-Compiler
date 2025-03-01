@@ -1,0 +1,7 @@
+procedure main() returns integer {
+    integer 3d = 0;
+
+    return 0;
+}
+
+//CHECK_FILE:spec-bad-id1.out

@@ -1,0 +1,19 @@
+procedure main() returns integer {
+    integer a = 7;
+    if (a == 5) {
+        5 -> std_output;
+    } else {
+        if (a != 7) {
+            9 -> std_output;
+        } else {
+            if (a == 7) {
+                7 -> std_output;
+            } else {
+                1 -> std_output;
+            }
+        }
+    }
+    return 0;
+}
+
+// CHECK_FILE:test.out

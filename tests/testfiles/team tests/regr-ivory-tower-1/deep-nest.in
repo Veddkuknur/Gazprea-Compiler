@@ -1,0 +1,23 @@
+typedef integer int;
+
+procedure main() returns integer {
+    int i=0;
+    loop while (i < 10) {
+        int j = 0;
+        i = i + 1;
+        loop while (j < 100) {
+            int k = 0;
+            j = j + 1;
+            loop while (k < 1000) {
+                int h = 0;
+                k = k + 1;
+                loop while (h < 1000) {
+                    h = h + 1;
+                }
+            }
+        }
+    }
+    i -> std_output;
+    return 0;
+}
+//CHECK:10

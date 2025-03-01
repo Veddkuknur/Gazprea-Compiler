@@ -1,0 +1,23 @@
+//INPUT:a
+
+const integer global_int = 2 + 4 * (2^3)/4;
+const global_real = 43.e+99 + 1;
+
+procedure main() returns integer {
+
+    character a;
+    a <- std_input;
+    a -> std_output;
+    '\n' -> std_output;
+    global_real -> std_output;
+    '\n' -> std_output;
+    as<real>(global_int) - 5 -> std_output;
+    '\n' -> std_output;
+
+    return 0;
+}
+
+
+
+
+//CHECK_FILE:test3.out

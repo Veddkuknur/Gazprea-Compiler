@@ -1,0 +1,8 @@
+typedef integer int;
+procedure main() returns integer {
+    tuple(integer, real) b = (234, true, 1);
+
+    return 0;
+}
+
+//CHECK_FILE:invalidNumberOfTupleMembers.out

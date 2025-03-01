@@ -1,0 +1,21 @@
+typedef integer int;
+typedef tuple(int, int x) tup;
+
+
+procedure _____(int a, const integer b) returns tup {
+
+    return (a, b);
+}
+
+procedure main() returns int {
+    const a = 5;
+    int b = -23;
+    tup tup = _____(b, a);
+
+    tup.x -> std_output;
+
+
+    return 0;
+}
+
+//CHECK_FILE:fail2.out

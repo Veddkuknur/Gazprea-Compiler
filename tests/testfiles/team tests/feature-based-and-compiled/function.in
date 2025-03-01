@@ -1,0 +1,25 @@
+function foo() returns integer {
+    return 1 + 1;
+}
+
+function bar(integer x, character y) returns integer {
+    return x * as<integer>(y) - 1;
+}
+
+procedure main() returns integer {
+    integer x = 3;
+    integer y = 5;
+
+    foo() -> std_output;
+    '\n' -> std_output;
+    bar(x, '\t') -> std_output;
+    '\n' -> std_output;
+
+    x = bar(foo() + foo(), as<character>(255 * foo()));
+    x -> std_output;
+    '\n' -> std_output;
+
+    return 0;
+}
+
+//CHECK_FILE:function.out

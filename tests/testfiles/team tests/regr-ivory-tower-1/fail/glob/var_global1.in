@@ -1,0 +1,19 @@
+/*
+S
+O
+M
+E
+
+P
+A
+D
+D
+I
+N
+G
+*/
+
+integer a = 0;
+procedure main() returns integer {return 0;}
+
+//CHECK:GlobalError on Line 16:

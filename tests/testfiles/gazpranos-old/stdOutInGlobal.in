@@ -1,0 +1,10 @@
+function mai() returns integer {
+    return 0;
+}
+'a' -> std_output;
+procedure main() returns integer {
+    integer a = 0;
+    return 0;
+}
+
+//CHECK_FILE:stdOutInGlobal.out

@@ -1,0 +1,21 @@
+
+procedure b() {
+    '1' -> std_output;
+}
+
+function c() returns integer = 1;
+
+function a() returns integer {
+    integer a = c();
+    call b();
+    return 0;
+}
+
+
+procedure main() returns integer {
+    integer a = a();
+    call b();
+    return 0;
+}
+
+//CHECK_FILE:functionCallingProc.out

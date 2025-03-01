@@ -1,0 +1,12 @@
+typedef integer int;
+
+function impure(int x) returns boolean {
+    x = 0;
+    return false;
+}
+
+procedure main() returns integer {
+    impure(3) -> std_output;
+    return 0;
+}
+//CHECK:AssignError on Line 4:

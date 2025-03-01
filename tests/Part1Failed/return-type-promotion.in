@@ -1,0 +1,14 @@
+// This test ensures your procedure checks for the right return value.
+
+procedure test() returns real {
+    integer a = 1;
+    return a;
+}
+
+procedure main() returns integer {
+    real result = test();
+    result -> std_output;
+    return 0;
+}
+
+//CHECK_FILE:./return-type-promotion.out

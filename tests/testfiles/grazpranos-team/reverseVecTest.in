@@ -1,0 +1,13 @@
+
+procedure main() returns integer {
+    integer[*] v = [8, 9, 6,1,2,3];
+    integer[*] numElements = reverse(v);
+    numElements->std_output;
+    '\n'->std_output;
+    v->std_output;
+    '\n'->std_output;
+    reverse(numElements)->std_output;
+    return 0;
+}
+
+//CHECK_FILE:reverseVecTest.out

@@ -1,0 +1,45 @@
+procedure main() returns integer {
+    real[5] v1;
+    real[5] v2;
+    real[5] v3;
+    real[5] result;
+    real scalar1;
+    real scalar2;
+
+    v1 = [2.0, 4.0, 6.0, 8.0, 10.0];
+    v2 = [1.0, 2.0, 3.0, 4.0, 5.0];
+    v3 = [3.0, 6.0, 9.0, 12.0, 15.0];
+    scalar1 = 2.0;
+    scalar2 = 3.0;
+
+    result = (v1 + v2) * scalar1;
+    result -> std_output;
+    '\n' -> std_output;
+
+    result = ((v1 - v2) + scalar2) / scalar1;
+    result -> std_output;
+    '\n' -> std_output;
+
+    result = ((v1 * v2) - (v3 / scalar2)) + (v1 % scalar1);
+    result -> std_output;
+    '\n' -> std_output;
+
+    result = (v1 ^ v2) / (v2 + scalar1);
+    result -> std_output;
+    '\n' -> std_output;
+
+    result = (((v1 + v2) * scalar1) ^ (v3 / scalar2)) % (v2 + scalar1);
+    result -> std_output;
+    '\n' -> std_output;
+
+    result = ((((v1 + v3) * scalar2) / (v2 + scalar1)) - (v1 % scalar2)) + (v3 ^ scalar1);
+    result -> std_output;
+    '\n' -> std_output;
+
+    result = ((v1 * scalar1) + ((v2 ^ scalar2) / v3)) - (v2 % scalar1);
+    result -> std_output;
+    '\n' -> std_output;
+
+    return 0;
+}
+//CHECK_FILE:vectorArithmetic.out

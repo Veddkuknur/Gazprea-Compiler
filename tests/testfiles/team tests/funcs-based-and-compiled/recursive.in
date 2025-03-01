@@ -1,0 +1,17 @@
+function bar(integer) returns integer;
+
+function foo(integer x) returns integer = bar(x);
+
+function bar(integer n) returns integer {
+    if (n == 0) {
+        return n;
+    }
+    return n + foo(n - 1);
+}
+
+procedure main() returns integer {
+    foo(10) ->std_output;
+    return 0;
+}
+
+//CHECK_FILE:recursive.out

@@ -1,0 +1,7 @@
+const integer x;
+
+procedure main() returns integer {
+    return 0;
+}
+
+// CHECK_FILE:test.out

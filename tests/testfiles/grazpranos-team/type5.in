@@ -1,0 +1,6 @@
+procedure main() returns integer {
+
+    real[*] a = [] + [];
+    return 0;
+}
+//CHECK_FILE:type5.out

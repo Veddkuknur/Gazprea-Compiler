@@ -1,0 +1,53 @@
+typedef integer int;
+typedef tuple(int i, real r, character c) intT;
+procedure main() returns integer {
+    intT ttup = (1000, 4, 'c');
+    intT t = ttup;
+    int t1 = 0;
+    real t2 = 0.0;
+    character t3 = '0';
+
+    int x =0;
+    real y = 0.0;
+    character z = '0';
+    intT tt1 = (1000, 4.1, 'c');
+    intT tt = tt1;
+    intT ttt1 = (1000, 1.2, 'c');
+    intT ttt = ttt1;
+    t.2->std_output;
+    t.r = 4.1;
+    '\n' -> std_output;
+    t.2->std_output;
+    '\n' -> std_output;
+    tt == ttt->std_output;
+    tt != ttt->std_output;
+    tt == tt ->std_output;
+    tt != tt ->std_output;
+
+    t.1 -> std_output;
+    '\n' -> std_output;
+    t.r -> std_output;
+    '\n' -> std_output;
+    t.3 -> std_output;
+    '\n' -> std_output;
+
+    t1, t2, t3 = t;
+    t1 -> std_output;
+    '\n' -> std_output;
+    t2 -> std_output;
+    '\n' -> std_output;
+    t3 -> std_output;
+    '\n' -> std_output;
+
+    x, y, z = (1,1.1, '1');
+    x -> std_output;
+    '\n' -> std_output;
+    y -> std_output;
+    '\n' -> std_output;
+    z -> std_output;
+    '\n' -> std_output;
+
+    return 0;
+}
+
+//CHECK_FILE:emitTuples.out

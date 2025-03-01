@@ -1,0 +1,20 @@
+function test() returns integer;
+
+procedure main() returns integer {
+    const integer a = test();
+    a -> std_output;
+    return a;
+}
+
+function test2() returns integer;
+
+
+function test() returns integer {
+    return test2();
+}
+
+function test2() returns integer {
+    return 0;
+}
+
+// CHECK_FILE:test.out

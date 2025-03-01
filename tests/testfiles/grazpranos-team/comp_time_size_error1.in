@@ -1,0 +1,13 @@
+procedure test() returns integer[1] {
+
+    return [1, 2, 3, 4];
+}
+
+procedure main() returns integer {
+
+    "sizeError case 5\n" -> std_output;
+    call test();
+    return 0;
+}
+
+//CHECK:SizeError on Line 3:

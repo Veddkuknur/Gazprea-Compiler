@@ -1,0 +1,43 @@
+// Goated Test
+
+procedure main() returns integer {
+integer i = 0;
+
+loop  {
+    integer j = 0;
+    character c = 'j';
+    loop {
+        // loop runs twice
+        integer k = 0;
+
+        loop while( k <= 3 ){
+            k = k + 1;
+        } //while (k <= 3);  // Post-condition
+
+
+        j = j + 1;
+
+        c -> std_output;
+        // break;
+        if (j == 1) {
+
+        c -> std_output;
+            break;
+        }
+        else {
+        //break;
+        }
+
+    } while (j <= 2);  // Post-condition
+    /////
+    /////
+    i = i + 1;
+    if (i == 2)
+       break;
+
+} while (i <= 3);  // Post-condition
+
+'\n' -> std_output;
+return 0;
+}
+//CHECK_FILE:deepNestedLoop.out

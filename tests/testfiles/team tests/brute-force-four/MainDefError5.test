@@ -1,0 +1,7 @@
+// wrong-returning mains
+
+procedure main() returns real {
+    return 3.14;
+}
+
+// CHECK:MainError on Line 3

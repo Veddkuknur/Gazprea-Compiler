@@ -1,0 +1,11 @@
+procedure v() {
+    7 -> std_output;
+    return;
+}
+
+procedure main() returns integer {
+    call v();
+    return 0;
+}
+
+// CHECK_FILE:test.out

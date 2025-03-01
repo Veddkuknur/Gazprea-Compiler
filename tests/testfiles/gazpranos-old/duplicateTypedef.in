@@ -1,0 +1,12 @@
+typedef real gangster;
+typedef integer gangster;
+
+
+procedure main() returns integer {
+    tuple(integer d, integer d) b = (1,1);
+    integer j = 0;
+    var a = (1,2);
+    var d = a.j;
+    return 0;
+}
+//CHECK_FILE:duplicateTypedef.out

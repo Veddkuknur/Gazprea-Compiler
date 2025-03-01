@@ -1,0 +1,37 @@
+procedure main() returns integer {
+    boolean[8] vec1;
+    boolean[8] vec2;
+    boolean[8] vec3;
+    boolean[8] vec4;
+    boolean[8] vec5;
+    boolean[8] result1;
+    boolean[8] result2;
+    boolean[8] result3;
+    boolean[8] result4;
+
+    vec1 = [true, false, true, false, true, true, false, false];
+    vec2 = [true, true, false, false, true, false, true, false];
+    vec3 = [false, true, true, false, false, true, true, true];
+    vec4 = [true, false, false, true, false, true, false, true];
+    vec5 = [false, false, true, true, true, false, false, true];
+
+    result1 = ((vec1 and vec2) or (not vec3)) xor (vec4 and (not vec5));
+
+    result2 = not (((vec1 xor vec2) or (vec3 and vec4)) xor vec5);
+
+    result3 = ((vec1 or (vec2 and (not vec3))) xor (vec4 or (vec5 and vec1)));
+
+    result4 = not ((vec1 and (vec2 or vec3)) xor ((not vec4) and vec5));
+
+    result1 -> std_output;
+    '\n' -> std_output;
+    result2 -> std_output;
+    '\n' -> std_output;
+    result3 -> std_output;
+    '\n' -> std_output;
+    result4 -> std_output;
+    '\n' -> std_output;
+
+    return 0;
+}
+//CHECK_FILE:booleanVectors.out

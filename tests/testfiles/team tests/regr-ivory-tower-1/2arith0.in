@@ -1,0 +1,27 @@
+procedure nl() {
+    '\n' -> std_output;
+}
+
+procedure main() returns integer {
+    1 * 1 -> std_output; call nl();
+    1 * 0 -> std_output; call nl();
+    0 * 0 -> std_output; call nl();
+    0 * 1 -> std_output; call nl();
+
+    -1 * 1 -> std_output; call nl();
+    -1 * -1 -> std_output; call nl();
+    1 * -1 -> std_output; call nl();
+    1 * 1 -> std_output; call nl();
+
+    return 0;
+}
+
+//CHECK:1
+//CHECK:0
+//CHECK:0
+//CHECK:0
+//CHECK:-1
+//CHECK:1
+//CHECK:-1
+//CHECK:1
+//CHECK:

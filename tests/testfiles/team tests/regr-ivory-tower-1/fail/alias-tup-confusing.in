@@ -1,0 +1,13 @@
+typedef integer int;
+
+procedure foo(var integer x, const integer y) {
+    x = x + y;
+}
+
+procedure main() returns integer {
+    tuple(int x, int y) x = (1, 3);
+    call foo(x.y, x.2);
+    x.y -> std_output;
+    return 0;
+}
+//CHECK:AliasingError on Line 9:

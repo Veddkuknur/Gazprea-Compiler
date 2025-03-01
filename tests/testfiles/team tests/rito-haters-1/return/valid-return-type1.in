@@ -1,0 +1,5 @@
+// This test ensures your procedure checks for the right return value.
+procedure main() returns integer {
+    return true;
+}
+//CHECK_FILE:valid-return-type1.out

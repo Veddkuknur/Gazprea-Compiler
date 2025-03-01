@@ -1,0 +1,7 @@
+procedure main() returns integer {
+    real r = 2e1000;
+    r -> std_output;
+    return 0;
+}
+
+// CHECK:inf

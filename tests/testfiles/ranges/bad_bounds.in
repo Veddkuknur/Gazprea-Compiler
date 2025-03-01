@@ -1,0 +1,8 @@
+procedure main() returns integer {
+
+    integer[*] a = -50..-150;
+    a -> std_output;
+    return 0;
+}
+
+//CHECK:[]

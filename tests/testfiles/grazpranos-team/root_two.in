@@ -1,0 +1,23 @@
+procedure main() returns integer {
+    real curr_guess = 1.0;
+    real bound = 0.00001;
+    real err = 1.0;
+    integer i = 0;
+    integer max_i = 100;
+
+    loop while ((err > bound) and (i < max_i)) {
+        real next_guess = curr_guess - (curr_guess * curr_guess - 2) / (2 * curr_guess);
+        err = next_guess - curr_guess;
+        if (err < 0) {
+            err = -err;
+        }
+        curr_guess = next_guess;
+        i = i + 1;
+    }
+
+    curr_guess -> std_output;
+
+    return 0;
+}
+
+//CHECK:1.41421

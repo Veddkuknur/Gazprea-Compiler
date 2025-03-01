@@ -1,0 +1,9 @@
+/*
+SOME
+PADDING
+*/
+
+var integer a = 0;
+procedure main() returns integer {return 0;}
+
+//CHECK:GlobalError on Line 6:

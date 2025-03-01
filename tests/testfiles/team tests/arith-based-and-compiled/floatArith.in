@@ -1,0 +1,33 @@
+procedure main() returns integer {
+    integer a = 10;
+    real b= 20e-4;
+    real c= 60.7777;
+    real d=2*4.27;
+
+    d=a;
+    d=d*24.9990;
+    a+b->std_output;
+    b-a->std_output;
+    //7*-8.909+c/d^2->std_output;
+    c=c/a+4;
+    c->std_output;
+    //a^2.4->std_output;
+    a=a+1;
+    a%2->std_output;
+    -b/9->std_output;
+    c==d->std_output;
+    d<5->std_output;
+    20>=b->std_output;
+    20e-4<=b->std_output;
+    20e-4>b->std_output;
+    60!=c->std_output;
+
+    b->std_output;
+    a->std_output;
+
+    '\n' -> std_output;
+
+    return 0;
+}
+
+//CHECK_FILE:floatArith.out

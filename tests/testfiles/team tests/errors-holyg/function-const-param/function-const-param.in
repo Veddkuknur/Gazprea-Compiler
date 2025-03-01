@@ -1,0 +1,11 @@
+function inc(integer x) returns integer {
+    x = 1;
+    return 0;
+}
+
+procedure main() returns integer {
+    inc(0) -> std_output;
+    return 0;
+}
+
+// CHECK_FILE:test.out

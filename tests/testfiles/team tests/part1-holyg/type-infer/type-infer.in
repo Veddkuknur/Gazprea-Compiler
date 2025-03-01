@@ -1,0 +1,15 @@
+procedure main() returns integer {
+    var i = 1;
+    const j = 2;
+    var k = 3.0;
+    const a = 'a';
+    var b = (4, 5, 'x');
+    i -> std_output; '\n' -> std_output;
+    j -> std_output; '\n' -> std_output;
+    k -> std_output; '\n' -> std_output;
+    a -> std_output; '\n' -> std_output;
+
+    return 0;
+}
+
+// CHECK_FILE:test.out

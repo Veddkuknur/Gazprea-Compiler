@@ -1,0 +1,16 @@
+procedure g(integer i) returns integer {
+    return i + 1;
+}
+
+procedure f(integer i) returns integer {
+    integer x = g(i);
+    return x + 1;
+}
+
+procedure main() returns integer {
+    integer x = f(1);
+    x -> std_output;
+    return 0;
+}
+
+// CHECK_FILE:test.out

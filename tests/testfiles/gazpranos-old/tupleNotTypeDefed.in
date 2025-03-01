@@ -1,0 +1,8 @@
+procedure main() returns integer {
+
+    t a = (234, 3.5);
+
+    return 0;
+}
+
+//CHECK_FILE:tupleNotTypeDefed.out

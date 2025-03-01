@@ -1,0 +1,8 @@
+procedure main() returns integer {
+    tuple(integer x, real y) your = (1, 2);
+    tuple(real c, real) mom = your;
+    mom.c -> std_output;
+    return 0;
+}
+
+// CHECK_FILE:test.out

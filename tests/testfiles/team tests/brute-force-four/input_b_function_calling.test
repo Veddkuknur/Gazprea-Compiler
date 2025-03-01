@@ -1,0 +1,33 @@
+function f(integer a, integer b, integer c) returns integer;
+
+function g(integer x, integer y) returns integer;
+
+procedure main() returns integer {
+    integer i = 0;
+    integer s = as<integer>(180E-1);
+    integer result = 0;
+    
+    loop {
+        character c;
+        c <- std_input;
+        c -> std_output;
+        f(i, 10, s - i) +- g(i, 15 - s) -> std_output;
+        i = i + 1;
+        g(i, f(1, i, s) * 15 - s) % 6 -> std_output;
+    } while (i < s);
+
+    return result;
+}
+
+function f(integer a, integer b, integer c) returns integer {
+    integer s = a + b;
+    return s;
+}
+
+function g(integer x, integer y) returns integer {
+    integer s = x * y; 
+    return s;
+}
+
+//INPUT:bbbbbbbbbbbbbbbbbbb
+//CHECK:b100b140b180b220b260b300b340b380b420b460b500b540b580b620b660b700b740b780

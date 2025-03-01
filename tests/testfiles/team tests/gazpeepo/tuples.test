@@ -1,0 +1,53 @@
+// INPUT:50
+// BUG From line 23 - 29 it relies on the tuple unpacking behaviour bug here: https://canary.discord.com/channels/1273722490472103966/1300658052738977893
+procedure main() returns integer {
+    const tuple(integer, integer mid, boolean) basicTuple = (1, 2, false);
+    const resultTuple = (4, 5, true);
+    const tupleAssign = ( -5, false, 'H');
+    var tuple(integer, boolean, character) defaultTuple; 
+
+    var integer x;
+    var integer y;
+    var boolean z;
+    basicTuple.1 -> std_output;
+    '\n' -> std_output;
+
+    // Unpacking
+    x, y, z = basicTuple;
+    x -> std_output;
+    '\n' -> std_output;
+    y -> std_output;
+    '\n' -> std_output;
+    z -> std_output;
+    '\n' -> std_output;
+
+    // Unpacking Advanced
+    resultTuple.1, resultTuple.2, resultTuple.3 = basicTuple;
+    resultTuple.1 -> std_output;
+    '\n' -> std_output;
+    resultTuple.2 -> std_output;
+    '\n' -> std_output;
+    resultTuple.3 -> std_output;
+    '\n' -> std_output;
+
+    defaultTuple.1 -> std_output;
+    '\n' -> std_output;
+    defaultTuple.2 -> std_output;
+    '\n' -> std_output;
+    defaultTuple.3 -> std_output;
+    '\n' -> std_output;
+
+    defaultTuple = tupleAssign;
+    defaultTuple == tupleAssign -> std_output;
+    '\n' -> std_output;
+    defaultTuple != tupleAssign -> std_output;
+    '\n' -> std_output;
+    defaultTuple.1 -> std_output;
+    '\n' -> std_output;
+    basicTuple.mid <- std_input;
+    basicTuple.mid -> std_output;
+    '\n' -> std_output;
+
+    return 0;
+}
+//CHECK_FILE:tuples.out

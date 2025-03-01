@@ -1,0 +1,13 @@
+procedure main() returns integer {
+    character x = 'x';
+    character y = 'y';
+    x -> std_output;
+    (x) -> std_output;
+    x == x -> std_output;
+    x != x -> std_output;
+    x == y -> std_output;
+    x != y -> std_output;
+    return 0;
+}
+
+// CHECK_FILE:test.out

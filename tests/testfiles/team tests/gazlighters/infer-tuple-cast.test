@@ -1,0 +1,8 @@
+procedure main() returns integer {
+    const tup = as<tuple(integer i, integer b)>((100, 200));
+    tup.b -> std_output;
+    tup.1 -> std_output;
+    return 0;
+}
+
+//CHECK:200100

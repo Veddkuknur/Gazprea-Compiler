@@ -1,0 +1,16 @@
+procedure main() returns integer {
+    var boolean a;
+    boolean b = true;
+    const boolean c = false;
+    boolean d = true;
+
+    d=false;
+    a=true;
+    a->std_output;
+    b->std_output;
+    c->std_output;
+    d->std_output;
+    return 0;
+}
+
+//CHECK_FILE:declareBools.out

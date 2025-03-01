@@ -1,0 +1,19 @@
+function fib(integer nth) returns integer {
+    integer a = 0;
+    integer b = 1;
+    integer i = 0;
+    loop while (i < nth) {
+        integer c = a;
+        a = b;
+        b = c + b;
+        i = i + 1;
+    }
+    return a;
+}
+
+procedure main() returns integer {
+    fib(7) -> std_output;
+    return 0;
+}
+
+//CHECK:13

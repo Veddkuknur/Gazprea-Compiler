@@ -1,0 +1,15 @@
+procedure main() returns integer {
+    tuple(integer, real) t1 = (5, 3.0);
+    tuple(character, real, real id) t2 = ('a', 3.0, 10.0);
+    t1.1 -> std_output; '\n' -> std_output;
+    t2.id -> std_output; '\n' -> std_output;
+    t2.id = t2.id / 10;
+    t2.id + 10 -> std_output; '\n' -> std_output;
+    t1.1 / 5 == t2.id -> std_output; '\n' -> std_output;
+    t1.1 / 5 != t2.id -> std_output; '\n' -> std_output;
+    t1.1 + 5 == t2.id -> std_output; '\n' -> std_output;
+    t1.1 + 5 != t2.id -> std_output; '\n' -> std_output;
+    return 0;
+}
+
+// CHECK_FILE:test.out

@@ -1,0 +1,16 @@
+procedure main() returns integer {
+
+    integer x = 7;
+    if (true) {
+      integer y = x;  /* y gets a value of 7 */
+      real x = x; /* Refers to the enclosing scope's 'x', so this is legal */
+
+      /* Now 'x' refers to the real version, with a value of 7.0 */
+    }
+
+    return 0;
+}
+
+
+
+//CHECK_FILE:spec-legal-decl1.out

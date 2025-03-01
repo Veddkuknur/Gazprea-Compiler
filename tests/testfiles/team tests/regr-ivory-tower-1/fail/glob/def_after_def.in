@@ -1,0 +1,6 @@
+procedure always_hundred() returns integer { return 100; }
+procedure always_hundred() returns integer { return 100; }
+
+procedure main() returns integer {return 0;}
+
+//CHECK:SymbolError on Line 2:

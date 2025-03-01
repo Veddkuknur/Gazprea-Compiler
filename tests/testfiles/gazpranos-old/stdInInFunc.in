@@ -1,0 +1,12 @@
+function mai() returns integer {
+    integer a = 1;
+    a <- std_input;
+    return 0;
+}
+
+procedure main() returns integer {
+    integer a = 0;
+    return 0;
+}
+
+//CHECK_FILE:stdInInFunc.out

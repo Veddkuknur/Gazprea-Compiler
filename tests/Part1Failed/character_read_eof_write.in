@@ -1,0 +1,8 @@
+procedure main() returns integer {
+    character i = 'a';
+    i <- std_input;
+    i -> std_output;
+    return 0;
+}
+// INPUT:
+// CHECK_FILE:character_read_eof_write.out

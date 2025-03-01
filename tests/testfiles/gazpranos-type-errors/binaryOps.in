@@ -1,0 +1,71 @@
+procedure main() returns integer {
+    // Complex Arithmetic Operations with Nesting
+    integer result;
+    boolean i;
+    result = (1 + 2) * (3 - 1) + (4 / 2) - (5 % 3);
+    result->std_output;
+
+    result = ((10 - 3) * 2 + 4) / (3 + 1) ^ 2;
+    result->std_output;
+
+    result = (2 ^ (3 + 1)) - (5 * (3 + 2) - (8 / 2));
+    result->std_output;
+
+    result = (((2 + 3) * 4) - (5 / 1) + (6 % 4)) * 2;
+    result->std_output;
+
+    result = ((3 + (2 * 4)) - (8 % 3)) ^ 2;
+    result->std_output;
+
+    // Complex Comparison Operations
+    i = (1 + 2) > (3 - 1);
+    i->std_output;
+
+    i = ((4 * 2) <= (8 / 2)) and (5 == (2 + 3));
+    i->std_output;
+
+    i = ((3 ^ 2) >= (4 + 4)) or ((5 % 2) != 0);
+    i->std_output;
+
+    i = ((1 + 2) < 5) and ((3 - 1) != (2 * 0));
+    i->std_output;
+
+    i = ((10 / 2) >= 5) xor ((3 + 2) == (4 + 1));
+    i->std_output;
+
+    // Logical Operations with Nesting
+    i = (true or false) and (not (false or true));
+    i->std_output;
+
+    i = (true and (false or (true xor false))) and not (false and true);
+    i->std_output;
+
+    i = ((true or false) xor (not (false or true))) and (true == true);
+    i->std_output;
+
+    i = (true and not (true or false)) or ((false xor true) and true);
+    i->std_output;
+
+    i = (not (true and false)) or ((true and true) and (false == false));
+    i->std_output;
+
+    // Nested Logical and Comparison Operations
+    i = ((1 + 2) > 2) and (3 < (4 - 1)) or ((2 ^ 3) == 8);
+    i->std_output;
+
+    i = ((5 % 2) != 0) and ((4 * 2) >= (2 + 4)) or (not (1 == 1));
+    i->std_output;
+
+    i = ((10 - 3) <= (7 + 2)) xor ((8 / 4) > (2 - 1));
+    i->std_output;
+
+    i = ((2 * 3) == 6) and ((5 - 2) != (2 + 1)) or ((3 + 3) >= 6);
+    i->std_output;
+
+    i = not (((2 ^ 3) >= 8) and ((10 / 2) > (3 + 1)));
+    i->std_output;
+
+    return 0;
+}
+
+//CHECK_FILE:binaryOps.out

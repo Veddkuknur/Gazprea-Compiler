@@ -1,0 +1,11 @@
+procedure x(var tuple(integer, integer, real) v) {
+    v.1 = 2;
+    v.2 -> std_output;
+}
+
+procedure main() returns integer {
+    call x((1, 2, 3));
+    return 0;
+}
+
+// CHECK_FILE:test.out

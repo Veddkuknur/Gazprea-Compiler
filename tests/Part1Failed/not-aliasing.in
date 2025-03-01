@@ -1,0 +1,13 @@
+// This is a bug on reference solution.
+procedure func(var integer x, var integer y) {}
+
+procedure main() returns integer {
+  var tuple(integer, integer) xx;
+  call func(xx.1, xx.2);
+  xx.1 -> std_output;
+  '\n' -> std_output;
+  xx.2 -> std_output;
+  return 0;
+}
+//CHECK:0
+//CHECK:0

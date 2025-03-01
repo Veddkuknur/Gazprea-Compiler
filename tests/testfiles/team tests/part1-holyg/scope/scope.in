@@ -1,0 +1,23 @@
+procedure main() returns integer {
+    integer i = 7;
+    i -> std_output;
+
+    if (i == 7){
+        integer i = 5;
+        i -> std_output;
+        i = i * 2;
+        i -> std_output;
+    }
+
+    i == 7 -> std_output;
+
+    loop while (i < 100){
+        i -> std_output;
+        i = i + 20;
+    }
+
+    i != 7 -> std_output;
+    return 0;
+}
+
+// CHECK_FILE:test.out

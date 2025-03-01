@@ -1,0 +1,9 @@
+procedure main() returns integer {
+    tuple(integer, integer) a = (3, 0);
+    tuple(real, boolean) b = as<tuple(real, boolean)>(a);
+    b.1 -> std_output; '\n' -> std_output;
+    b.2 -> std_output; '\n' -> std_output;
+    return 0;
+}
+
+// CHECK_FILE:test.out

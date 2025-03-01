@@ -1,0 +1,9 @@
+procedure main() returns integer {
+    integer i = 1;
+    real r = 2.0;
+    r = i;
+    r -> std_output;
+    return 0;
+}
+
+// CHECK_FILE:test.out

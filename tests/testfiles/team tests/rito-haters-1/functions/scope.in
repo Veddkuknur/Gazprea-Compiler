@@ -1,0 +1,14 @@
+// Tests to make sure you can redeclare integers that match the function's arguments.
+
+function b(integer c) returns integer {
+    integer c = 5;
+    return c;
+}
+
+procedure main() returns integer {
+    integer result = b(3);
+    result -> std_output;
+    return 0;
+}
+
+//CHECK_FILE:./scope.out

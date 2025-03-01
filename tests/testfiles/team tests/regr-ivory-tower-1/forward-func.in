@@ -1,0 +1,16 @@
+function foo(integer x) returns integer;
+
+procedure main() returns integer {
+    integer x = 2;
+    integer y = foo(x);
+    x -> std_output;
+    '\n' -> std_output;
+    y -> std_output;
+    return 0;
+}
+
+function foo(integer t) returns integer {
+    return t + 1;
+}
+//CHECK:2
+//CHECK:3

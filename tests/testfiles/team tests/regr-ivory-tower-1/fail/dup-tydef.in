@@ -1,0 +1,7 @@
+typedef tuple(integer, character, real, boolean) all;
+typedef real all;
+
+procedure main() returns integer {
+    return 0;
+}
+//CHECK:TypeError on Line 2:

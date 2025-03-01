@@ -1,0 +1,16 @@
+procedure f(var integer a, var integer b, const integer c, const integer d) {
+    return;
+}
+
+procedure main() returns integer {
+    integer x = 0;
+    integer y = 0;
+    integer z = 0;
+
+    call f(x, x, x, x);
+    7 -> std_output;
+
+    return 0;
+}
+
+// CHECK_FILE:test.out

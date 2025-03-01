@@ -1,0 +1,6 @@
+// This test checks that you are correctly reporting syntax errors.
+
+procedure main() returns integer {
+    integer 5a = 5;
+}
+//CHECK:SyntaxError on Line 4

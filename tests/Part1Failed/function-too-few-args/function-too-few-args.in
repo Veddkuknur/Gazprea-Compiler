@@ -1,0 +1,10 @@
+function f(integer i) returns integer {
+    return i + 1;
+}
+
+procedure main() returns integer {
+    f() -> std_output;
+    return 0;
+}
+
+// CHECK_FILE:test.out

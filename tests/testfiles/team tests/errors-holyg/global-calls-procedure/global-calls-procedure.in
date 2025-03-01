@@ -1,0 +1,12 @@
+procedure inc(integer x) returns integer {
+    return x + 1;
+}
+
+const integer i = inc(7);
+
+procedure main() returns integer {
+    i -> std_output;
+    return 0;
+}
+
+// CHECK_FILE:test.out

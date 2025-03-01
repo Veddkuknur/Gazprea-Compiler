@@ -1,0 +1,21 @@
+typedef tuple(integer, integer) int_tup;
+typedef real r;
+
+procedure main() returns integer {
+    tuple(real, character) tester = (3.23, 'a');
+    boolean k = false;
+    int_tup new_test = as<int_tup>(tester);
+    integer i = 0;
+
+    as<r>(k) -> std_output;
+
+    if (as<boolean>(i) == true) {
+        10 -> std_output;
+    } else {
+        5 -> std_output;
+    }
+
+    return 0;
+}
+
+//CHECK:05

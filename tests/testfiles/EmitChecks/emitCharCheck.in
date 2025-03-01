@@ -1,0 +1,46 @@
+procedure main() returns integer {
+    character i = 'a';
+    integer a = 1;
+    real f = 1.1;
+    character nl  = '\n';
+    i->std_output;
+    nl->std_output;
+    i = '1';
+    i->std_output;
+    nl->std_output;
+    nl->std_output;
+    i = '*';
+    i->std_output;
+    nl->std_output;
+    i = '\n';
+    i->std_output;
+    nl->std_output;
+    i  = '\0';
+    nl->std_output;
+    i  = '\a';
+    nl->std_output;
+    i  = '\b';
+    nl->std_output;
+    i  = '\n';
+    i->std_output;
+    nl->std_output;
+    i  = '\r';
+    nl->std_output;
+    i  = '"';
+    i->std_output;
+    nl->std_output;
+    i  = '\'';
+    i->std_output;
+    nl->std_output;
+    i  = '\\';
+    i->std_output;
+    nl->std_output;
+    a->std_output;
+    a = 10;
+    a->std_output;
+    nl->std_output;
+    f->std_output;
+    nl->std_output;
+    return 0;
+}
+//CHECK_FILE:emitCharCheck.out

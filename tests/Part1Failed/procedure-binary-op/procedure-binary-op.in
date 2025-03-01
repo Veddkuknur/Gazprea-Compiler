@@ -1,0 +1,11 @@
+procedure f(integer i) returns integer {
+    return i + 1;
+}
+
+procedure main() returns integer {
+    integer x = f(1) * 2;
+    x -> std_output;
+    return 0;
+}
+
+// CHECK_FILE:test.out

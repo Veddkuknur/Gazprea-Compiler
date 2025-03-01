@@ -1,0 +1,15 @@
+procedure double(var integer input) returns boolean {
+	input = input * 2;
+	return true;
+}
+
+procedure main() returns integer {
+	integer input = 12;
+	const succeeded = double(input);
+	input -> std_output;
+	'\n' -> std_output;
+	succeeded -> std_output;
+	return 0;
+}
+//CHECK:24
+//CHECK:T

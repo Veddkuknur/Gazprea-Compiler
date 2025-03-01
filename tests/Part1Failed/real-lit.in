@@ -1,0 +1,47 @@
+procedure main() returns integer {
+    real r1 = 42.0;
+    real r2 = 42.;
+    real r3 = 4.2;
+    real r4 = 0.42;
+    real r5 = .42;
+    real r6 = 4.2e-1;
+    real r7 = 4.2e+9;
+    real r8 = 4.2E5;
+    real r9 = 42.e+37;
+    real r10 = .42e-7;
+    real r11 = 42E6;
+    r1 -> std_output;
+    '\n' -> std_output;
+    r2 -> std_output;
+    '\n' -> std_output;
+    r3 -> std_output;
+    '\n' -> std_output;
+    r4 -> std_output;
+    '\n' -> std_output;
+    r5 -> std_output;
+    '\n' -> std_output;
+    r6 -> std_output;
+    '\n' -> std_output;
+    r7 -> std_output;
+    '\n' -> std_output;
+    r8 -> std_output;
+    '\n' -> std_output;
+    r9 -> std_output;
+    '\n' -> std_output;
+    r10 -> std_output;
+    '\n' -> std_output;
+    r11 -> std_output;
+    return 0;
+}
+
+//CHECK:42
+//CHECK:42
+//CHECK:4.2
+//CHECK:0.42
+//CHECK:0.42
+//CHECK:0.42
+//CHECK:4.2e+09
+//CHECK:420000
+//CHECK:inf
+//CHECK:4.2e-08
+//CHECK:4.2e+07

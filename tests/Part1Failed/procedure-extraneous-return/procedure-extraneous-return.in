@@ -1,0 +1,9 @@
+procedure f(integer x) {
+    return 0;
+}
+
+procedure main() returns integer {
+    return 0;
+}
+
+// CHECK_FILE:test.out

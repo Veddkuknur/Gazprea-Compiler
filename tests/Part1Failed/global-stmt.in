@@ -1,0 +1,9 @@
+{
+    integer a = 10;
+}
+
+procedure main() returns integer {
+    return 0;
+}
+
+// CHECK:StatementError on Line 1: ...

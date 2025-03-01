@@ -1,0 +1,17 @@
+procedure main() returns integer {
+    42.0 -> std_output; '\n' -> std_output;
+    42. -> std_output; '\n' -> std_output;
+    4.2 -> std_output; '\n' -> std_output;
+    0.42 -> std_output; '\n' -> std_output;
+    .42 -> std_output; '\n' -> std_output;
+    4.2e-1 -> std_output; '\n' -> std_output;
+    4.2e+9 -> std_output; '\n' -> std_output;
+    4.2E5 -> std_output; '\n' -> std_output;
+    42.e+37 -> std_output; '\n' -> std_output;
+    42.e-37 -> std_output; '\n' -> std_output;
+    .42e-7 -> std_output; '\n' -> std_output;
+    42E6 -> std_output;
+    return 0;
+}
+
+// CHECK_FILE:test.out

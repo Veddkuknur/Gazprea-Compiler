@@ -1,0 +1,17 @@
+procedure main() returns integer {
+
+  integer x = 2 * 3;  // This is ignored
+
+  /* This is a block comment. It can span as many lines as we want, and
+     only ends when the closing sequence is encountered.
+   */
+  integer a = 2 * 3;  /* Block comments can also be on a single line */
+
+  // invalid comment below!
+
+  /* A comment /* A nested comment */ */
+
+  return 0;
+}
+
+//CHECK_FILE:spec-comments.out

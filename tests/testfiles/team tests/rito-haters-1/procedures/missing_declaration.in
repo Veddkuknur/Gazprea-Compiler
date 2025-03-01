@@ -1,0 +1,10 @@
+// Checks that the procedure errors since it cannot find the definition.
+procedure ta() returns boolean;
+
+procedure main() returns integer {
+    boolean result = ta();
+    result -> std_output;
+    return 0;
+}
+
+//CHECK:DefinitionError on Line 2

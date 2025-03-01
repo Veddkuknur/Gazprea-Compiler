@@ -1,0 +1,9 @@
+procedure main() returns integer {
+    tuple(integer, integer[20]) rb_tup = (1, [1,2,3,4]);
+
+    var c = [i in rb_tup.2 | i *i] + 3.4 + false;
+    c->std_output;
+    return 0;
+}
+
+//CHECK:TypeError on Line 4: Arithmetic between vectors of incompatible types

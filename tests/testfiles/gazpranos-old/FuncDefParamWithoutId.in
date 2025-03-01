@@ -1,0 +1,12 @@
+/* Forward declaration, no body */
+function f(integer y, integer) returns integer;
+
+procedure main() returns integer {
+  integer y = f(13, 2);
+  /* Can use this in main, even though the definition is below */
+  return 0;
+}
+
+function f(integer x, integer ) returns integer = x*z;
+
+//CHECK_FILE:ProcDefParamWithoutId.out

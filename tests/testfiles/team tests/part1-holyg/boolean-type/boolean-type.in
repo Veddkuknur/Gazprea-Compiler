@@ -1,0 +1,33 @@
+procedure main() returns integer {
+    boolean t = true;
+    boolean f = false;
+    t -> std_output;
+    f -> std_output;
+    (t) -> std_output;
+    (f) -> std_output;
+    not (t) -> std_output;
+    not (f) -> std_output;
+    t or t -> std_output;
+    t or f -> std_output;
+    f or t -> std_output;
+    f or f -> std_output;
+    t xor t -> std_output;
+    t xor f -> std_output;
+    f xor t -> std_output;
+    f xor f -> std_output;
+    t and t -> std_output;
+    t and f -> std_output;
+    f and t -> std_output;
+    f and f -> std_output;
+    t == t -> std_output;
+    t == f -> std_output;
+    f == t -> std_output;
+    f == f -> std_output;
+    t != t -> std_output;
+    t != f -> std_output;
+    f != t -> std_output;
+    f != f -> std_output;
+    return 0;
+}
+
+// CHECK_FILE:test.out

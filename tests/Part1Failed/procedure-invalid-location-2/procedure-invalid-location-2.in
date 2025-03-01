@@ -1,0 +1,13 @@
+procedure inc(integer x) returns integer {
+    return x + 1;
+}
+
+procedure main() returns integer {
+    integer x = inc(0);
+    x = inc(1);
+    call inc(2);
+    inc(3) -> std_output;
+    return 0;
+}
+
+// CHECK_FILE:test.out

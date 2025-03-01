@@ -1,0 +1,6 @@
+procedure main() returns integer {
+    real a = 2/0;
+    a -> std_output;
+    return 0;
+}
+//CHECK_FILE:divZero.out

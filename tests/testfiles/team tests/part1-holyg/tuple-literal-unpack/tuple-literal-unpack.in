@@ -1,0 +1,10 @@
+procedure main() returns integer {
+    integer x = 1;
+    integer y = 2;
+    x, y = (y, x);
+    x -> std_output;
+    y -> std_output;
+    return 0;
+}
+
+// CHECK_FILE:test.out

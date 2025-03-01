@@ -1,0 +1,20 @@
+const integer a=1;
+
+typedef integer int;
+typedef int i;
+
+procedure tomato() returns i {
+    tuple(i, int, i, int) b = (1, 1, 1, 1);
+    b.1=0;
+
+    return 0;
+}
+
+
+procedure main() returns integer {
+    tuple(i, i) a = (1,1);
+    b.4 ->std_output;
+
+    return 0;
+}
+//CHECK_FILE:undefTuple.out

@@ -1,0 +1,10 @@
+function f(integer x, integer  z) returns integer = x * -z;
+
+procedure main() returns integer {
+  integer y = f(f(f(f(f(13,1+1),1+1),1+1),1+1),1+1);
+  y ->std_output; '\n' ->std_output;
+  /* Can use this in main, even though the definition is below */
+  return 0;
+}
+
+//CHECK_FILE:nestedFunctionCallInFunctionCalls.out

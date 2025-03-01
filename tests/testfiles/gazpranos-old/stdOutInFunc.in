@@ -1,0 +1,11 @@
+function mai() returns integer {
+    'a' -> std_output;
+    return 0;
+}
+
+procedure main() returns integer {
+    integer a = 0;
+    return 0;
+}
+
+//CHECK_FILE:stdOutInFunc.out

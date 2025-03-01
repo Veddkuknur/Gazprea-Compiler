@@ -1,0 +1,17 @@
+procedure test1() returns integer {
+    return 0;
+}
+
+function test() returns integer {
+    const integer a = test1();
+    return a;
+}
+
+
+procedure main() returns integer {
+    const integer a = test();
+    a -> std_output;
+    return a;
+}
+
+// CHECK_FILE:test.out

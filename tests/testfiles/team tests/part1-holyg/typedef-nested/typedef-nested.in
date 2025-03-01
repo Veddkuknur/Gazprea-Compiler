@@ -1,0 +1,9 @@
+typedef integer z;
+typedef z x;
+procedure main() returns integer {
+    x i = 9;
+    i -> std_output;
+    return 0;
+}
+
+// CHECK_FILE:test.out

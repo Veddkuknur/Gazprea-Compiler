@@ -1,0 +1,18 @@
+procedure main() returns integer {
+    integer n = 1000000;
+    integer i;
+    integer sum;
+
+    loop while (i < n) {
+        integer a = i;
+        integer b = i + 1;
+        integer c = i + 3;
+        integer d = i + 2;
+
+        i = i + 1;
+    }
+    420 -> std_output;
+    return 0;
+}
+
+// CHECK:420

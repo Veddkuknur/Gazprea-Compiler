@@ -1,0 +1,131 @@
+procedure main() returns integer {
+    boolean i = 2>1.0;
+    i = 1.0>2.0;
+    i->std_output;
+
+    i = 1.0>2;
+    i->std_output;
+
+    i = 2 > 1;
+    i->std_output;
+
+    i = 1 > 2;
+    i->std_output;
+
+
+    i = 1.0<2.0;
+    i->std_output;
+
+    i = 1.0<2;
+    i->std_output;
+
+    i = 2 < 1;
+    i->std_output;
+
+    i = 1 < 2;
+    i->std_output;
+
+    i = 1.0==2.0;
+    i->std_output;
+
+    i = 1.0 == 1;
+    i->std_output;
+
+    i = 1 == 1.0;
+    i->std_output;
+
+    i = 1 == 1;
+    i->std_output;
+
+    i = 2 == 1;
+    i->std_output;
+
+
+
+
+    i = 1.0!=2.0;
+    i->std_output;
+
+    i = 1.0 != 1;
+    i->std_output;
+
+    i = 1 != 1.0;
+    i->std_output;
+
+    i = 1 != 1;
+    i->std_output;
+
+    i = 2 != 1;
+    i->std_output;
+
+
+
+
+
+    i = 1.0>=2.0;
+    i->std_output;
+
+    i = 1.0 >= 1;
+    i->std_output;
+
+    i = 1 >= 1.0;
+    i->std_output;
+
+    i = 1 >= 1;
+    i->std_output;
+
+    i = 2 >= 1;
+    i->std_output;
+
+
+    i = 1.0<=2.0;
+    i->std_output;
+
+    i = 1.0 <= 1;
+    i->std_output;
+
+    i = 1 <= 1.0;
+    i->std_output;
+
+    i = 1 <= 1;
+    i->std_output;
+
+    i = 2 <= 1;
+    i->std_output;
+    i = not true;
+    i->std_output;
+
+    i = not false;
+    i->std_output;
+
+    i = true xor false;
+    i->std_output;
+
+    i = true xor true;
+    i->std_output;
+
+
+    i = true or false;
+    i->std_output;
+
+    i = true and true;
+    i->std_output;
+
+    i = false and true;
+    i->std_output;
+
+
+    i = false == true;
+    i->std_output;
+
+    i = true == true;
+    i->std_output;
+
+
+    i = false != true;
+    i->std_output;
+
+    return 0;
+}
+
+//CHECK_FILE:booleanOps.out

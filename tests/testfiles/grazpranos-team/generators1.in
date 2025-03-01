@@ -1,0 +1,18 @@
+procedure main() returns integer {
+    integer i = 0;
+    integer n = 10;
+    loop while (i < n) {
+        i = i+ 1;
+        if ( i >= 8) {
+            integer[*] v =  [i in [1, 2] | [i in [3,4] | i*i ][i]];
+            v->std_output;
+            i = i+ 1;
+
+            continue;
+        }
+    }
+
+    return 0;
+}
+
+//CHECK:[9 16][9 16]

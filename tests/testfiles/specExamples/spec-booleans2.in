@@ -1,0 +1,9 @@
+procedure main() returns integer {
+
+    boolean a = true * false;
+
+
+    return 0;
+}
+
+//CHECK_FILE:spec-booleans2.out

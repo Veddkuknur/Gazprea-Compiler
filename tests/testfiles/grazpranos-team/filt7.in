@@ -1,0 +1,17 @@
+procedure main() returns integer {
+
+    var c = [i in [i in as<character[100]>(90..120) | as<character>(as<integer>(i) + 6)] & as<integer>(i)> 100, as<real>(i) < 95, as<character>(i) == 'a'];
+    var b = c.1;
+    integer[length(c.1)+ 10] a = as<integer[length(c.1)]>(b);
+    var e = (a + 2 + 3 + 4 ^4 + a + a^2 + 9 );
+    e -> std_output;
+    c.1->std_output;
+    c.2 -> std_output;
+    c.3 -> std_output;
+    c.4 ->std_output;
+
+    b->std_output;
+    //c.1->std_output;
+    return 0;
+}
+//CHECK:[10673 10878 11085 11294 11505 11718 11933 12150 12369 12590 12813 13038 13265 13494 13725 13958 14193 14430 14669 14910 15153 15398 15645 15894 16145 16398 270 270 270 270 270 270 270 270 270 270][e f g h i j k l m n o p q r s t u v w x y z { | } ~][                                                                    ][a][` b c d][e f g h i j k l m n o p q r s t u v w x y z { | } ~]

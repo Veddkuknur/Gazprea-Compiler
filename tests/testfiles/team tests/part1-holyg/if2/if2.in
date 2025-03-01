@@ -1,0 +1,9 @@
+procedure main() returns integer {
+    integer i = 100;
+    if (i - 1 != 100 - 1){
+        i -> std_output;
+    }
+    return 0;
+}
+
+// CHECK_FILE:test.out

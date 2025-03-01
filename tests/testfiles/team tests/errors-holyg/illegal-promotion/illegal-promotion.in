@@ -1,0 +1,8 @@
+procedure main() returns integer {
+    real r = 2.0;
+    boolean b = false;
+    b = r;
+    return 0;
+}
+
+// CHECK_FILE:test.out

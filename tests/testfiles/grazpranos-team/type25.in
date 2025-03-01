@@ -1,0 +1,9 @@
+procedure main() returns integer {
+    tuple(integer, integer[20]) rb_tup = (1, [1,2,3,4]);
+
+    integer[*] c = [i in [1,2,3,4,5,6] | i *i] + 3;
+    c->std_output;
+    return 0;
+}
+
+//CHECK:[4 7 12 19 28 39]

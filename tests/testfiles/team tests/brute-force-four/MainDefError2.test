@@ -1,0 +1,10 @@
+// two mains
+
+procedure main() returns integer {
+    return 1;
+}
+procedure main() returns integer {
+    return 2;
+}
+
+// CHECK:MainError on Line 6

@@ -1,0 +1,10 @@
+function test() returns integer {
+    return 0;
+}
+
+procedure main() returns integer {
+    call test();
+    return 0;
+}
+
+// CHECK_FILE:test.out

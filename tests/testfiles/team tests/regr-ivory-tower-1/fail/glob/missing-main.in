@@ -1,0 +1,7 @@
+procedure bar(integer x) returns integer {
+    return x + 1;
+}
+
+procedure foo(var integer x) returns integer { return 1; }
+
+//CHECK_FILE:missing-main.out

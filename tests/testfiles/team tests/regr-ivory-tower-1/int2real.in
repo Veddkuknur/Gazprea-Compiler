@@ -1,0 +1,12 @@
+procedure main() returns integer {
+    integer int_var = 7;
+    real real_var = int_var;
+
+    real_var -> std_output;
+    '\n' -> std_output;
+    int_var -> std_output;
+
+    return 0;
+}
+//CHECK:7
+//CHECK:7

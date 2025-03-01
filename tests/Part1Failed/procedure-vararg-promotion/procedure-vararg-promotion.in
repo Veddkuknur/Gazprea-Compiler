@@ -1,0 +1,12 @@
+procedure f(var real x) returns real {
+    return 7.7;
+}
+
+procedure main() returns integer {
+    integer a = 1;
+    real b = f(a);
+    b -> std_output;
+    return 0;
+}
+
+// CHECK_FILE:test.out
