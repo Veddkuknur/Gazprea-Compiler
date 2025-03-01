@@ -1,12 +1,3 @@
-# GazpreaBase
-The base cmake setup for Gazprea assignment.
-
-Author: Braedy Kuzma (braedy@ualberta.ca)  
-
-Updated by: Deric Cheung (dacheung@ualberta.ca)
-
-Updated by: Quinn Pham (qpham@ualberta.ca)
-
 # Usage
 ## Installing MLIR
 In this project you will be working with MLIR and LLVM.
