@@ -1,0 +1,6 @@
+procedure main() returns integer {
+    real a = 0^-100;
+    a -> std_output;
+    return 0;
+}
+//CHECK_FILE:negExpZero.out

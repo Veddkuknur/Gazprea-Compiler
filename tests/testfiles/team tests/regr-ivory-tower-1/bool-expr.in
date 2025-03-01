@@ -1,0 +1,11 @@
+procedure main() returns integer {
+    const boolean a = true;
+    const boolean b = false;
+    boolean expr = not (a xor b and b or a and (not b));
+    expr -> std_output;
+    expr == true -> std_output;
+    expr != true -> std_output;
+    return 0;
+}
+
+//CHECK:FFT

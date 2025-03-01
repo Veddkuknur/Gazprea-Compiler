@@ -1,0 +1,9 @@
+procedure main() returns integer {
+    tuple(integer, integer[20]) rb_tup = (1, [1,2,3,4]);
+
+    integer[*] c = [i in [] | i *i] + 3;
+    c->std_output;
+    return 0;
+}
+
+//CHECK:TypeError on Line 4: Operation between ambiguous types

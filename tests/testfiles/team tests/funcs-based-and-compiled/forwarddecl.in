@@ -1,0 +1,12 @@
+function foo() returns integer;
+
+procedure main() returns integer {
+    foo() -> std_output;
+    return 0;
+}
+
+function foo() returns integer {
+    return 10;
+}
+
+//CHECK_FILE:forwarddecl.out

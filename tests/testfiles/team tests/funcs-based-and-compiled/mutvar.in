@@ -1,0 +1,13 @@
+procedure foo(var integer x) {
+    x = x * 3;
+}
+
+procedure main() returns integer {
+    integer x = 1;
+    call foo(x);
+    x -> std_output;
+    '\n' -> std_output;
+    return 0;
+}
+
+//CHECK_FILE:mutvar.out

@@ -1,0 +1,17 @@
+procedure test(var real[5] a) {
+
+    a[1] = 46;
+    // a is passed by value
+}
+
+
+procedure main() returns integer {
+
+    real[5] vec = [55];
+    vec[1] = 2;
+    vec -> std_output;
+    call test(vec);
+    vec -> std_output;
+    return 0;
+}
+//CHECK_FILE:passReference.out

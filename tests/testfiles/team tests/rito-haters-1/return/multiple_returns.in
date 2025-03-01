@@ -1,0 +1,14 @@
+// This test ensures that you are able to handle multiple returns.
+
+procedure main() returns integer {
+    'S' -> std_output;
+    return 0;
+    'S' -> std_output;
+    return 2;
+    'S' -> std_output;
+    return 3;
+    'S' -> std_output;
+    return 4;
+}
+
+//CHECK_FILE:./multiple_returns.out

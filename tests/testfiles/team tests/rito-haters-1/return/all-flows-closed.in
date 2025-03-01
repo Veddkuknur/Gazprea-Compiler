@@ -1,0 +1,11 @@
+// This test ensures that all paths are closed.
+
+procedure main() returns integer {
+    if (true) {
+        return 0;
+    } else {
+
+    }
+}
+
+//CHECK_FILE:all-flows-closed.out

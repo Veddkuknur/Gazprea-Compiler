@@ -1,0 +1,29 @@
+procedure main() returns integer {
+    var tuple(integer, real, character, boolean) t1;
+    tuple(real i, integer) t2 = (0.1,4);
+    const tuple(character, integer a, character c) t3 = ('m',990,'l');
+    t1 = (5, 2.5, 'a', false);
+    t1.1->std_output;
+    t1=(6, 2.5, 'a', false);
+    t1.2->std_output;
+    t1.2=12.67;
+    t2.i=3333.3333;
+
+    t1.2->std_output;
+    t1.3->std_output;
+    t1.4->std_output;
+
+    t2.1->std_output;
+    t2.i->std_output;
+    t2.2->std_output;
+
+    t3.1->std_output;
+    t3.2->std_output;
+    t3.3->std_output;
+    t3.a->std_output;
+    t3.c->std_output;
+
+    return 0;
+}
+
+//CHECK_FILE:declareTuples.out

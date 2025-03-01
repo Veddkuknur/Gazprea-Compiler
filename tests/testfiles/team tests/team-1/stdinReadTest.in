@@ -1,0 +1,25 @@
+//INPUT_FILE:stdinReadTest.ins
+
+procedure main() returns integer {
+    integer i = 10;
+    real r = 10;
+    character c = 'a';
+    boolean b;
+
+    i <- std_input; i -> std_output; ' ' -> std_output;
+    r <- std_input; r -> std_output; ' ' -> std_output;
+    i <- std_input; i -> std_output; ' ' -> std_output;
+    r <- std_input; r -> std_output; ' ' -> std_output;
+    c -> std_output; c <- std_input; c -> std_output;
+    i <- std_input; i -> std_output; ' ' -> std_output;
+    r <- std_input; r -> std_output; ' ' -> std_output;
+    i <- std_input; i -> std_output; ' ' -> std_output;
+    b <- std_input; b -> std_output; ' ' -> std_output;
+    b <- std_input; b -> std_output; ' ' -> std_output;
+    '\n' -> std_output;
+
+    return 0;
+}
+
+//CHECK_FILE:stdinReadTest.out
+

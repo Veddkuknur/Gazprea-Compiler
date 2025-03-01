@@ -1,0 +1,97 @@
+procedure DoItAgain(var integer a);
+
+procedure main() returns integer{
+    integer a = 6;
+    integer b = 10;
+    integer c = 100;
+    loop while (a != 0.0){
+        if (b > 0.0){
+            real three = 3.0;
+            loop{
+                three -> std_output;
+                three = three - 1;
+            } while (three >= 0);
+        }
+        else if (not (b >= 0)){
+            real four = 3.0;
+            loop{
+                four -> std_output;
+                four = four - 1;
+                if (four >= 0){
+                    break;
+                }
+            }
+        }
+        else{
+            '0' -> std_output;
+        }
+        a = a - 1;
+    }
+    c = 121;
+    c -> std_output;
+    call DoItAgain(c);
+    c -> std_output;
+    b = 15;
+    b -> std_output;
+    call DoItAgain(b);
+    b -> std_output;
+    a = 3;
+    a -> std_output;
+    call DoItAgain(a);
+    a -> std_output;
+    return 0;
+}
+
+procedure DoItAgain(var integer a){
+    integer b = 10;
+    integer c = 51;
+    loop while (a != 0.0){
+        integer c = 13;
+        if (b > 0.0){
+            real three = 3.0;
+            loop{
+                three -> std_output;
+                three = three - 1;
+            } while (three >= 0);
+        }
+        else if (not (b >= 0)){
+            real four = 3.0;
+            loop{
+                four -> std_output;
+                four = four - 1;
+                if (four >= 0){
+                    break;
+                }
+            }
+        }
+        else{
+            '0' -> std_output;
+        }
+        a = a - 1;
+    }
+    loop while (a != 0.0){
+        if (b > 0.0){
+            real three = 3.0;
+            loop{
+                three -> std_output;
+                three = three - 1;
+            } while (three >= 0);
+        }
+        else if (not (b >= 0)){
+            real four = 3.0;
+            loop{
+                four -> std_output;
+                four = four - 1;
+                if (four >= 0){
+                    break;
+                }
+            }
+        }
+        else{
+            '0' -> std_output;
+        }
+        c -> std_output;
+        a = a - 1;
+    }
+}
+//CHECK_FILE:./Scopes.out

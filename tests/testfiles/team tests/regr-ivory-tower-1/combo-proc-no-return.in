@@ -1,0 +1,48 @@
+procedure impure(var integer x, var integer y) {
+    x -> std_output;
+    '\n' -> std_output;
+    y -> std_output;
+    '\n' -> std_output;
+    if (true) {
+        'o' -> std_output;
+        '\n' -> std_output;
+    } else {
+        'c' -> std_output;
+        '\n' -> std_output;
+        return;
+    }
+    loop {
+        x = x + 1;
+        x -> std_output;
+        '\n' -> std_output;
+        if (x > 10) {
+            break;
+        }
+        if (x < -2) {
+            x -> std_output;
+            '\n' -> std_output;
+            return;
+        }
+    }
+}
+
+procedure main() returns integer {
+    integer x = 2;
+    integer y = 3;
+    call impure(x, y);
+    return 0;
+}
+
+//CHECK:2
+//CHECK:3
+//CHECK:o
+//CHECK:3
+//CHECK:4
+//CHECK:5
+//CHECK:6
+//CHECK:7
+//CHECK:8
+//CHECK:9
+//CHECK:10
+//CHECK:11
+//CHECK:

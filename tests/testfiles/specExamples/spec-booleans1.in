@@ -1,0 +1,32 @@
+procedure main() returns integer {
+
+    boolean a = true;
+    boolean b = false;
+    boolean c;
+
+    (true) -> std_output;
+    not a -> std_output;
+    not not a -> std_output;
+    a or a -> std_output;
+    a or b -> std_output;
+    b or b -> std_output;
+    a xor a -> std_output;
+    b xor a -> std_output;
+    b xor b -> std_output;
+    a and a -> std_output;
+    a and b -> std_output;
+    b and b -> std_output;
+    a == a -> std_output;
+    b == a -> std_output;
+    a != a -> std_output;
+    b != a -> std_output;
+
+    c -> std_output;
+
+    '\n' -> std_output;
+
+
+    return 0;
+}
+
+//CHECK_FILE:spec-booleans1.out

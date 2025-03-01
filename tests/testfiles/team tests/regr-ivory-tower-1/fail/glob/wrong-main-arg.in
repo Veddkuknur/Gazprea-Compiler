@@ -1,0 +1,11 @@
+procedure bar(integer x) returns integer {
+    return x + 1;
+}
+
+procedure foo(var integer x) returns integer { return 1; }
+
+procedure main(var integer arg, var character argc) returns integer {
+    return 0;
+}
+
+//CHECK:MainError on Line 7:

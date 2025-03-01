@@ -1,0 +1,17 @@
+procedure main() returns integer {
+
+    tuple(integer, integer) int_tup = (1, 2);
+    tuple(real, boolean) rb_tup = as<tuple(real, boolean)>(int_tup);
+
+    int_tup.1 -> std_output;
+    int_tup.2 -> std_output;
+
+    '\n' -> std_output;
+
+    rb_tup.1 -> std_output;
+    rb_tup.2 -> std_output;
+
+    return 0;
+}
+
+// CHECK_FILE:tuple_casts.out

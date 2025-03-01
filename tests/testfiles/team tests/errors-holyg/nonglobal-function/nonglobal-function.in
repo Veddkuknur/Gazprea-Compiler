@@ -1,0 +1,6 @@
+procedure main() returns integer {
+    { function pain() returns integer { return 0; } }
+    return 0;
+}
+
+// CHECK_FILE:test.out

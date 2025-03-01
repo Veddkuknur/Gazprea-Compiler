@@ -1,0 +1,32 @@
+typedef boolean bool;
+typedef character char;
+typedef integer int;
+typedef real float;
+
+typedef tuple(int, int) pair;
+
+procedure p ( integer i, integer j ) {
+    i + j -> std_output; '\n' -> std_output;
+}
+
+procedure recursive ( var integer i, integer j ) {
+    call p( i, j );
+    if ( j == 0 ) {
+        return;
+    }
+    i = i - 1;
+    call recursive( i, j - 1 );
+}
+
+procedure main() returns integer {
+    integer x = 5;
+    integer y = 5;
+    call recursive( x, y );
+    x -> std_output; ' ' -> std_output;
+    y -> std_output; ' ' -> std_output;
+'\n'->std_output;
+    return 0;
+}
+
+//CHECK_FILE:recursiveFunc.out
+

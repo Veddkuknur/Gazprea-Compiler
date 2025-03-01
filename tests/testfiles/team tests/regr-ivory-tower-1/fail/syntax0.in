@@ -1,0 +1,7 @@
+const integer _ = 0;
+const integer __ = 1;
+const integer ___ = 2;
+const integer 0x = _ + __ + ___;
+
+procedure main() returns integer { return 0; }
+//CHECK:SyntaxError on Line 4:

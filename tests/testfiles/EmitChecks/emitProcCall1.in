@@ -1,0 +1,15 @@
+procedure lol() returns integer {
+
+    123 -> std_output;
+    return 0;
+}
+
+
+procedure main() returns integer {
+
+    integer g = lol();
+    g -> std_output;
+    return 0;
+}
+
+//CHECK_FILE:emitProcCall1.out

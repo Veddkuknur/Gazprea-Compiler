@@ -1,0 +1,13 @@
+procedure main() returns integer {
+    'a' -> std_output;
+    '\n' -> std_output;
+    2 -> std_output;
+    '\n'->std_output;
+    true -> std_output;
+    false -> std_output;
+    '\n' -> std_output;
+    1.3 -> std_output;
+    return 0;
+}
+
+//CHECK_FILE:printing.out

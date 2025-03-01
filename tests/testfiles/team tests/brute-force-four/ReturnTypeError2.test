@@ -1,0 +1,15 @@
+
+
+procedure main() returns integer {
+    integer x = 5;
+    if(1 == 1)
+        return 1;
+    else if (2 == 2) {
+        return 5;
+    }
+    return 0;
+}
+
+function f() returns real = 'a';
+
+// CHECK:ReturnError on Line 13

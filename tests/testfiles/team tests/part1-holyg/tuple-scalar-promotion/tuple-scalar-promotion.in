@@ -1,0 +1,17 @@
+procedure main() returns integer {
+    tuple(integer, integer) i = (1, 2);
+    tuple(real, real) r = i;
+    tuple(real, integer) q = i;
+
+    tuple(character, integer) a = ('a', 1);
+    tuple(character, real) b = a;
+
+    r.1 -> std_output; '\n' -> std_output;
+    q.2 -> std_output; '\n' -> std_output;
+    a.2 -> std_output; '\n' -> std_output;
+    b.2 -> std_output; '\n' -> std_output;
+
+    return 0;
+}
+
+// CHECK_FILE:test.out

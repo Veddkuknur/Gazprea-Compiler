@@ -1,0 +1,12 @@
+procedure main() returns integer {
+    integer hello = 0;
+    integer h3llo = 0;
+    integer _h3LL0 = 0;
+    integer _Hi = 0;
+    integer Hi = 0;
+    integer _3 = 0;
+
+    return 0;
+}
+
+//CHECK_FILE:spec-identifiers.out

@@ -1,0 +1,9 @@
+procedure main() returns integer {
+
+    integer[*] x;
+    return 0;
+}
+
+
+
+//CHECK_FILE:type1.out

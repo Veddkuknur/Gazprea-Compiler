@@ -1,0 +1,37 @@
+typedef integer int;
+
+function lol() returns boolean {
+
+    return true;
+}
+typedef boolean bool;
+const bool a = true;
+
+procedure main() returns integer {
+if (a){
+    if (lol()){
+        if (true){
+            if ( 1<2){
+                if (1>2){
+                    if (1 ==2){
+                        if (1!=2){
+                            if (true and true){
+                                if (false xor true){
+                                    if (1 <= 2){
+                                        if (1>=2){
+                                            if (1){}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+    return 0;
+}
+
+//CHECK_FILE:notBoolInIf.out

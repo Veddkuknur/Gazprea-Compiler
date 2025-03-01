@@ -1,0 +1,85 @@
+procedure conditional_testing(integer a, integer b) returns integer {
+
+    integer i = 20;
+    integer j = 25;
+    if (b > 3) {
+        integer i = 0;
+        2 ->std_output;
+        return 420;
+    } else if (false) {
+        return 6;
+        3 -> std_output;
+    } else if (a > 20){
+
+        integer i = 6969;
+        if (0 == 0) {
+            boolean j = i < j;
+            return 46;
+            j -> std_output;
+        } else {
+            integer i = 420;
+            i -> std_output;
+            j = 22;
+            return 6890;
+        }
+        696969 -> std_output;
+        return j;
+        j = 22232425;
+    }
+
+    return a *b;
+
+
+}
+
+
+procedure main() returns integer {
+    integer i = 20;
+    integer j = 25;
+    integer d = conditional_testing(40, 50);
+
+        loop while (d > 0) {
+            integer j = 20;
+            d = d - 1;
+            if (d > 40) {
+                if (d < 50) {
+                    continue;
+                } else if (d > 100) {
+                    integer d = conditional_testing(30,30);
+                    d -> std_output;
+                    break;
+                } else {
+                    return 0;
+                }
+
+            }
+        }
+
+    if (false) {
+        integer i = 0;
+        2 ->std_output;
+    } else if (false) {
+        integer b30 = conditional_testing(40, 1);
+        3 + b30 -> std_output;
+    } else {
+        integer d20 =+ conditional_testing(1,1);
+        integer i = 6969 + d20;
+        integer p39 = conditional_testing(3,4);
+
+        if (0 == 0) {
+            boolean j = i < j;
+            j -> std_output;
+        } else {
+            integer i = 420;
+            i -> std_output;
+            j = 22;
+        }
+        696969 + 39 -> std_output;
+        j = 22232425;
+    }
+    i -> std_output;
+    j -> std_output;
+    return 0;
+}
+
+//CHECK_FILE:loopsReturn.out

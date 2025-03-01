@@ -1,0 +1,6 @@
+procedure main() returns integer {
+
+    boolean a = [] + [1,2,3];
+    return 0;
+}
+//CHECK:TypeError on Line 3: Arithmetic between vectors of incompatible types

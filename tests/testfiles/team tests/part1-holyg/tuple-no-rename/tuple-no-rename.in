@@ -1,0 +1,16 @@
+procedure main() returns integer {
+    tuple(real a, real b) sneed = (3, 6);
+    tuple(real c, real d) chuck = (4, 8);
+
+    var seed = sneed;
+    seed.a -> std_output;
+    seed.b -> std_output;
+
+    seed = chuck;
+    seed.a -> std_output;
+    seed.b -> std_output;
+
+    return 0;
+}
+
+// CHECK_FILE:test.out

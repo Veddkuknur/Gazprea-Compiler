@@ -1,0 +1,13 @@
+//INPUT:2147483647
+procedure main() returns integer {
+    integer result;
+    character c; 
+    result<-std_input;
+        result = -1*result-1;
+    result->std_output;
+    //c<-std_input;
+    //c->std_output;
+    return 0;
+}
+
+//CHECK_FILE:stdInputCheck.out

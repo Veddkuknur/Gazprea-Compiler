@@ -1,0 +1,4 @@
+procedure main() returns integer {
+    return 0 ^ (-2);
+}
+//CHECK:MathError:

@@ -1,0 +1,16 @@
+procedure main() returns integer {
+
+    var c = [i in [i in as<character[100]>(90..120) | as<character>(as<integer>(i) + 6)] & as<integer>(i)> 100, as<real>(i) < 95, as<character>(i) == 'a'];
+    var b = c.1;
+    integer[length(c.1)] a = as<integer[length(c.1)]>(b);
+    a -> std_output;
+    c.1->std_output;
+    c.2 -> std_output;
+    c.3 -> std_output;
+    c.4 ->std_output;
+
+    b->std_output;
+    //c.1->std_output;
+    return 0;
+}
+//CHECK:[101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126][e f g h i j k l m n o p q r s t u v w x y z { | } ~][                                                                    ][a][` b c d][e f g h i j k l m n o p q r s t u v w x y z { | } ~]

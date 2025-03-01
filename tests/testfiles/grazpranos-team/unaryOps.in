@@ -1,0 +1,33 @@
+procedure main() returns integer {
+    integer[8] vec1;
+    integer[8] vec2;
+    integer[8] vec3;
+    integer[8] result1;
+    integer[8] result2;
+    integer[8] result3;
+    integer[8] result4;
+
+    vec1 = [1, 2, 3, 4, 5, 6, 7, 8];
+    vec2 = [8, 7, 6, 5, 4, 3, 2, 1];
+    vec3 = [2, 3, 5, 7, 11, 13, 17, 19];
+
+    result1 = -((vec1 + vec2) * vec3);
+
+    result2 = (vec1 - vec3) + (vec2 * 2);
+
+    result3 = (vec1 / vec2) + (vec3 % vec1);
+
+    result4 = -((vec2 * vec3) - (vec1 / 2));
+
+    result1 -> std_output;
+    '\n' -> std_output;
+    result2 -> std_output;
+    '\n' -> std_output;
+    result3 -> std_output;
+    '\n' -> std_output;
+    result4 -> std_output;
+    '\n' -> std_output;
+
+    return 0;
+}
+//CHECK_FILE:unaryOps.out

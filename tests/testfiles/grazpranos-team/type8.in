@@ -1,0 +1,6 @@
+procedure main() returns integer {
+
+    character a = [4.5];
+    return 0;
+}
+//CHECK_FILE:type8.out

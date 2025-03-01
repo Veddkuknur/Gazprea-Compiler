@@ -1,0 +1,12 @@
+// Tests to make sure procedures don't need a return stmt is the return type is void.
+
+procedure b(integer c) {
+    c -> std_output;
+}
+
+procedure main() returns integer {
+    call b(5);
+    return 0;
+}
+
+//CHECK_FILE:./no-void-needed.out

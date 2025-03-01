@@ -1,0 +1,34 @@
+procedure main() returns integer {
+    integer a = 3;
+    integer b = 0004;
+    a -> std_output; '\n' -> std_output;
+    b -> std_output; '\n' -> std_output;
+    (a) -> std_output; '\n' -> std_output;
+    a+b -> std_output; '\n' -> std_output;
+    a-b -> std_output; '\n' -> std_output;
+    a*b -> std_output; '\n' -> std_output;
+    a/b -> std_output; '\n' -> std_output;
+    a%b -> std_output; '\n' -> std_output;
+    a^b -> std_output; '\n' -> std_output;
+    -a -> std_output; '\n' -> std_output;
+    +a -> std_output; '\n' -> std_output;
+    a < b -> std_output; '\n' -> std_output;
+    b < a -> std_output; '\n' -> std_output;
+    b > a -> std_output; '\n' -> std_output;
+    a > b -> std_output; '\n' -> std_output;
+    a <= b -> std_output; '\n' -> std_output;
+    b <= a -> std_output; '\n' -> std_output;
+    b >= a -> std_output; '\n' -> std_output;
+    a >= b -> std_output; '\n' -> std_output;
+    a >= a -> std_output; '\n' -> std_output;
+    a <= a -> std_output; '\n' -> std_output;
+    a > a -> std_output; '\n' -> std_output;
+    a < a -> std_output; '\n' -> std_output;
+    a == a -> std_output; '\n' -> std_output;
+    a == b -> std_output; '\n' -> std_output;
+    a != a -> std_output; '\n' -> std_output;
+    a != b -> std_output; '\n' -> std_output;
+    return 0;
+}
+
+// CHECK_FILE:test.out

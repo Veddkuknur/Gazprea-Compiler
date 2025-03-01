@@ -1,0 +1,11 @@
+procedure main() returns integer {
+
+    integer[*] x = [1];
+
+    var d = x + false;
+    return 0;
+}
+
+
+
+//CHECK_FILE:type3.out

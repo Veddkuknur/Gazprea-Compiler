@@ -1,0 +1,12 @@
+procedure math(integer x, integer y) returns integer {
+    return x + y;
+}
+
+const i = math(1, 2);
+
+procedure main() returns integer {
+    return 0;
+}
+
+
+// CHECK:GlobalError on Line 5

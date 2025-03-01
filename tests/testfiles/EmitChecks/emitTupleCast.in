@@ -1,0 +1,35 @@
+const tuple(real,real) x = (1.2,2.2);
+const tuple(integer, integer) real_cast =  as<tuple(integer, integer)>(x);
+const tuple(integer, integer, integer) int_tup = (1, 99,3);
+procedure main() returns integer {
+    var int_cast = as<tuple(boolean,character,real)>(int_tup);
+    tuple(character, character, character) char_tup = ('a','b','c');
+    const char_cast = as<tuple(boolean,integer,real)>(char_tup);
+    tuple(boolean, boolean, boolean) bool_tup = (true,true,true);
+    var bool_cast = as<tuple(character,integer,real)>(bool_tup);
+    x.1->std_output;
+    '\n'->std_output;
+    real_cast.1->std_output;
+    '\n'->std_output;
+    int_cast.1->std_output;
+    '\n'->std_output;
+    int_cast.2->std_output;
+    '\n'->std_output;
+    int_cast.3->std_output;
+    '\n'->std_output;
+    bool_cast.1->std_output;
+    '\n'->std_output;
+    bool_cast.2->std_output;
+    '\n'->std_output;
+    bool_cast.3->std_output;
+    '\n'->std_output;
+    char_cast.1->std_output;
+    '\n'->std_output;
+    char_cast.2->std_output;
+    '\n'->std_output;
+    char_cast.3->std_output;
+    '\n'->std_output;
+    return 0;
+}
+
+//CHECK_FILE:emitTupleCast.out

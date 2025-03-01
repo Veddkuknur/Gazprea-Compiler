@@ -1,0 +1,28 @@
+{
+  "testDir": "testfiles",
+  "testedExecutablePaths": {
+    "gazpranos": "../bin/gazc"
+  },
+  "runtimes": {
+    "gazpranos": "../bin/libgazrt.so"
+  },
+  "toolchains": {
+    "gazprea": [
+      {
+        "stepName": "gazc",
+        "executablePath": "$EXE",
+        "arguments": ["$INPUT","$OUTPUT"],
+        "output": "gazc.ll",
+        "allowError": true
+      },
+      {
+        "stepName": "lli",
+        "executablePath": "/cshome/cmput415/415-resources/llvm-project/build/bin/lli",
+        "arguments": ["$INPUT"],
+        "usesRuntime": true,
+        "usesInStr": true,
+        "allowError": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+
+function printf(integer x) returns integer {
+    return x;
+}
+function scanf(integer x) returns integer {
+    return x;
+}
+function malloc(integer x) returns integer {
+    return x;
+}
+function free(integer x) returns integer {
+    return x;
+}
+function mlir(integer x) returns integer {
+    return x;
+}
+function llvm(integer x) returns integer {
+    return x;
+}
+
+
+procedure main() returns integer {
+    printf(1) -> std_output;
+    scanf(2) -> std_output;
+    malloc(3) -> std_output;
+    free(4) -> std_output;
+    mlir(5) -> std_output;
+    llvm(6) -> std_output;
+
+    return 0;
+}
+
+//CHECK_FILE:mangling.out

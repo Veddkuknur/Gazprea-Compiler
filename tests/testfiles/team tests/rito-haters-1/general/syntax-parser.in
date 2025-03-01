@@ -1,0 +1,10 @@
+// This test checks that you are correctly reporting syntax errors.
+
+procedure main() returns integer {
+    if {
+
+    } else {
+
+    }
+}
+//CHECK:SyntaxError on Line 4

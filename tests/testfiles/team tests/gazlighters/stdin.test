@@ -1,0 +1,17 @@
+//INPUT_FILE:./stdin.ins
+procedure main() returns integer {
+  integer a;
+  integer b;
+  integer c;
+  boolean d;
+  a <- std_input;
+  a -> std_output;
+  b <- std_input;
+  b -> std_output;
+  c <- std_input;
+  c -> std_output;
+  d <- std_input;
+  d -> std_output;
+  return 0;
+}
+//CHECK:199F

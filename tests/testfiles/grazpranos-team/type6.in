@@ -1,0 +1,6 @@
+procedure main() returns integer {
+
+    real[10] a = [1, false];
+    return 0;
+}
+//CHECK_FILE:type6.out

@@ -1,0 +1,25 @@
+/* Forward declaration, no body */
+
+const integer a=1;
+
+typedef integer int;
+typedef int i;
+
+function f(integer y, integer x) returns integer;
+
+
+
+procedure main() returns integer {
+  integer b = 24;
+  integer c = 3;
+  tuple(i, int, i, int) b = (1, 1, 1, 1);
+  integer y = f(13, b.0) + f(c, d);
+  /* Can use this in main, even though the definition is below */
+  return 0;
+}
+
+function f(integer x, integer z) returns integer {
+
+    return x*z;
+}
+//CHECK_FILE:alreadyDefined.out

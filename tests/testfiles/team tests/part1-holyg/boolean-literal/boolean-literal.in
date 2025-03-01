@@ -1,0 +1,31 @@
+procedure main() returns integer {
+    true -> std_output;
+    false -> std_output;
+    (true) -> std_output;
+    (false) -> std_output;
+    not (true) -> std_output;
+    not (false) -> std_output;
+    true or true -> std_output;
+    true or false -> std_output;
+    false or true -> std_output;
+    false or false -> std_output;
+    true xor true -> std_output;
+    true xor false -> std_output;
+    false xor true -> std_output;
+    false xor false -> std_output;
+    true and true -> std_output;
+    true and false -> std_output;
+    false and true -> std_output;
+    false and false -> std_output;
+    true == true -> std_output;
+    true == false -> std_output;
+    false == true -> std_output;
+    false == false -> std_output;
+    true != true -> std_output;
+    true != false -> std_output;
+    false != true -> std_output;
+    false != false -> std_output;
+    return 0;
+}
+
+// CHECK_FILE:test.out

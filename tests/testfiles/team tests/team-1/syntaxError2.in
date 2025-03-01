@@ -1,0 +1,6 @@
+procedure main() returns integer {
+	// Syntax Error
+	var x;
+	return 0;
+}
+//CHECK_FILE:syntaxError2.out

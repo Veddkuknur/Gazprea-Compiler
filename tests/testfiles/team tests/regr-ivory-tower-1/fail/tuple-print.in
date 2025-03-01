@@ -1,0 +1,5 @@
+procedure main() returns integer {
+    (2, 3) -> std_output;
+    return 0;
+}
+//CHECK:TypeError on Line 2:

@@ -1,0 +1,21 @@
+
+procedure math(integer x, integer y) returns integer {
+    return x + y;
+}
+
+
+procedure main() returns integer {
+    integer i = 7;
+
+    // procedures can (yes) be called in unary expression
+    i = - math(69, 420);
+
+
+    // procedures can not be used in binary expressions
+    i = math(69, 420) + 1;
+
+    return 0;
+}
+
+
+// CHECK:CallError on Line 15

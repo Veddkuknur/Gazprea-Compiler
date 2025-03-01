@@ -1,0 +1,77 @@
+procedure main() returns integer {
+    integer x = 0;
+    integer n = 0;
+    integer b = 415;
+
+    loop {
+      n -> std_output;
+      '\n' -> std_output;
+      n = n + 1;
+
+
+      if (n > 20) {
+         loop {
+              b -> std_output;
+             '\n' -> std_output;
+              if (true) {
+                break;
+              } else {
+                continue;
+              }
+              break;
+         }
+         111 -> std_output;
+         '\n' -> std_output;
+         break;
+      } else {
+
+        continue;
+        loop {
+         b + 25 -> std_output;
+        '\n' -> std_output;
+         break;
+         }
+        20 -> std_output;
+      }
+    }
+    'o' -> std_output;
+    '\n' -> std_output;
+    /* Print 1 to 10 */
+    loop while (x <= 10) {
+      x = x + 1;
+      x -> std_output;
+      '\n' -> std_output;
+      if (x < 5) {
+         continue;
+
+      } else {
+
+          420000 -> std_output;
+          '\n' -> std_output;
+          if (x < 5) {
+            if (true) {
+              break;
+
+            } else {
+
+               integer j = 0;
+               loop while ( j <= 5) {
+                  'a' -> std_output;
+                  '\n' -> std_output;
+                  break;
+                  'b' -> std_output;
+
+               }
+
+            }
+          }
+      }
+      420 -> std_output;
+      '\n' -> std_output;
+    }
+
+    6969 -> std_output;
+    '\n' -> std_output;
+    return 0;
+}
+//CHECK_FILE:loops.out

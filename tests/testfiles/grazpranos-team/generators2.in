@@ -1,0 +1,10 @@
+procedure main() returns integer {
+    integer i = 0;
+    integer n = 10;
+    loop i in [i in [1, 2] | [i in [3,4] | i*i ][i]] {
+        i -> std_output;
+    }
+
+    return 0;
+}
+//CHECK:916

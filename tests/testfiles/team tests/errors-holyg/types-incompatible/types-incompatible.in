@@ -1,0 +1,8 @@
+procedure main() returns integer {
+    integer x = 0;
+    boolean y = true;
+    x + y -> std_output;
+    return 0;
+}
+
+// CHECK_FILE:test.out

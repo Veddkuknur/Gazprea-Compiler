@@ -1,0 +1,91 @@
+typedef character main;
+typedef integer i;
+typedef boolean b;
+
+const main A = 'A';
+const main B = 'B';
+const main C = 'C';
+
+typedef i int_var;               // Interlock i into int_var
+typedef main char_var;            // Interlock main into char_var
+typedef b bool_var;               // Interlock b into bool_var
+
+typedef int_var nested_int;       // Interlock int_var into nested_int
+typedef char_var nested_char;     // Interlock char_var into nested_char
+typedef bool_var nested_bool;     // Interlock bool_var into nested_bool
+
+typedef nested_int deep_int;      // Further interlock nested_int into deep_int
+typedef nested_char deep_char;    // Further interlock nested_char into deep_char
+typedef nested_bool deep_bool;    // Further interlock nested_bool into deep_bool
+
+typedef deep_int ultra_int;       // Further interlock deep_int into ultra_int
+typedef deep_char ultra_char;     // Further interlock deep_char into ultra_char
+typedef deep_bool ultra_bool;     // Further interlock deep_bool into ultra_bool
+
+typedef ultra_int hyper_int;      // Further interlock ultra_int into hyper_int
+typedef ultra_char hyper_char;    // Further interlock ultra_char into hyper_char
+typedef ultra_bool hyper_bool;    // Further interlock ultra_bool into hyper_bool
+
+procedure main() returns hyper_int {
+  // Integer variables
+  int_var i = 30;
+  nested_int j = 40;
+  deep_int k = 50;
+  ultra_int m = 60;
+  hyper_int n = 70;
+  deep_char nl = '\n';
+
+  // Character variables
+  char_var c1 = A;
+  nested_char c2 = B;
+  deep_char c3 = C;
+  ultra_char c4 = 'D';
+  hyper_char c5 = 'E';
+
+  // Boolean variables
+  bool_var flag1 = true;
+  nested_bool flag2 = false;
+  deep_bool flag3 = true;
+  ultra_bool flag4 = false;
+  hyper_bool flag5 = true;
+
+  // Output integer variables
+  i->std_output;
+  nl->std_output;        // Output 30
+  j->std_output;
+  nl->std_output;        // Output 40
+  k->std_output;
+  nl->std_output;        // Output 50
+  m->std_output;
+  nl->std_output;        // Output 60
+  n->std_output;
+  nl->std_output;        // Output 70
+
+  // Output character variables
+  c1->std_output;
+  nl->std_output;       // Output 'A'
+  c2->std_output;
+  nl->std_output;       // Output 'B'
+  c3->std_output;
+  nl->std_output;       // Output 'C'
+  c4->std_output;
+  nl->std_output;       // Output 'D'
+  c5->std_output;
+  nl->std_output;       // Output 'E'
+
+  // Output boolean variables
+  flag1->std_output;
+  nl->std_output;    // Output true
+  flag2->std_output;
+  nl->std_output;    // Output false
+  flag3->std_output;
+  nl->std_output;    // Output true
+  flag4->std_output;
+  nl->std_output;    // Output false
+  flag5->std_output;
+  nl->std_output;    // Output true
+
+  return 0;
+}
+
+//CHECK_FILE:bigTypeDef.out

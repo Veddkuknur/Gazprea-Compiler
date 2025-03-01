@@ -1,0 +1,16 @@
+procedure test(const real[5] a) {
+    a -> std_output;
+    // a is passed by value
+}
+
+
+procedure main() returns integer {
+
+    real[5] vec = [55];
+    vec[1] = 2;
+    vec -> std_output;
+    call test(vec);
+    vec -> std_output;
+    return 0;
+}
+//CHECK_FILE:passValue.out

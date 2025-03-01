@@ -1,0 +1,5 @@
+procedure main() returns real {
+    return 0;
+}
+
+// CHECK_FILE:test.out

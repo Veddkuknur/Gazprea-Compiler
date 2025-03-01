@@ -1,0 +1,16 @@
+// Checks that we're ensuring prototypes match their impl equiv.
+
+function test() returns integer;
+
+function test() returns integer {
+    return 0;
+}
+
+function test() returns integer {
+    return 0;
+}
+
+procedure main() returns integer {
+    return 0;
+}
+//CHECK:SymbolError on Line 9

@@ -1,0 +1,10 @@
+procedure main() returns integer {
+    real[3,2] a;
+    integer[3,2] b;
+    boolean[2,3] c;
+    character[2,3] d;
+    a -> std_output; b -> std_output; c-> std_output; d-> std_output;
+    return 0;
+}
+
+//CHECK_FILE:noRhsMatrices.out

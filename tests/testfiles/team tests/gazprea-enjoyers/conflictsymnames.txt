@@ -1,0 +1,21 @@
+typedef character main;
+typedef integer i;
+typedef tuple(i i, main main, i i2) tup;
+const main A = 'A';
+
+procedure main() returns i {
+    main main = 'a';
+    i i = 0;
+    tup tup = (i, main, i);
+    main d = 'c';
+    main -> std_output;
+    i -> std_output;
+    d -> std_output;
+    A -> std_output;
+    tup.i -> std_output;
+    tup.main -> std_output;
+    tup.i2 -> std_output;
+
+    return 0;
+}
+//CHECK_FILE:./conflictsymnames.out

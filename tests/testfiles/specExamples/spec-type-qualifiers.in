@@ -1,0 +1,17 @@
+procedure main() returns integer {
+
+    const integer i;
+    var integer j;
+
+    var a = 1; // integer
+    const b = 1; // integer
+    var c = 1.0; // real
+    const d = 'a'; // character
+    var e = true; // boolean
+    var t = (1, 2, 'a'); // tuple(integer, integer, character, integer[3])
+
+    return 0;
+
+}
+
+//CHECK_FILE:spec-type-qualifiers.out

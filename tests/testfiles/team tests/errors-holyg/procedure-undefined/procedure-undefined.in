@@ -1,0 +1,10 @@
+procedure f() returns integer {
+    return 0;
+}
+procedure g() returns integer;
+
+procedure main() returns integer {
+    return 0;
+}
+
+// CHECK_FILE:test.out

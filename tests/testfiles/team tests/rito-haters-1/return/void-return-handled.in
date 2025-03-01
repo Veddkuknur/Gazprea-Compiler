@@ -1,0 +1,13 @@
+// Tests to make sure procedures that are void can still work with void returns.
+
+procedure b(integer c) {
+    c -> std_output;
+    return;
+}
+
+procedure main() returns integer {
+    call b(5);
+    return 0;
+}
+
+//CHECK_FILE:./void-return-handled.out

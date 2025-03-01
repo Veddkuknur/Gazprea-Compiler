@@ -1,0 +1,7 @@
+procedure main() returns integer {
+    var c = [i in [1,12,3,4,5,18,29,92,1,12] & i < 2, i > 3, i == 4];
+    var e = (c.1 == c.1);
+    integer d = e;
+    return 0;
+}
+//CHECK:TypeError on Line 4: Type mismatch

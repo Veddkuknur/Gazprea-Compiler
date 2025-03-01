@@ -1,0 +1,14 @@
+procedure main() returns integer {
+    boolean a = true;
+    boolean b = false;
+
+    a -> std_output;
+    b -> std_output;
+
+    a and b -> std_output;
+    a or b -> std_output;
+    a xor b -> std_output;
+
+    return 0;
+}
+//CHECK:TFFTT

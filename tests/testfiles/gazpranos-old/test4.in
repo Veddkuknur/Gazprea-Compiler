@@ -1,0 +1,15 @@
+procedure main() returns integer {
+    {
+        loop while (1<2) {
+            if (true){
+                procedure a(integer a) returns integer{
+
+                }
+            }
+        }
+    }
+    return 0;
+}
+
+
+//CHECK_FILE:test4.out

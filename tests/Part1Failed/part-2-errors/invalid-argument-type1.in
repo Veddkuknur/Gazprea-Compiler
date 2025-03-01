@@ -1,0 +1,12 @@
+procedure test(var integer a) {
+    a = a + 1;
+}
+
+procedure main() returns integer {
+
+    integer[3] a = [1,2,3];
+    call test(a);
+    return 0;
+}
+
+//CHECK:TypeError on Line 8:

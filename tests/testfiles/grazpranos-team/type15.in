@@ -1,0 +1,11 @@
+procedure main() returns integer {
+    integer i = 2;
+
+    /* The "i"s both domain expressions are at the same scope, which is
+     * the one enclosing the loop. Therefore the matrix is: [[0 0 0] [0 1 2] [0 2 4]]
+     */
+    real[3,3] c = [ i in [i in [1,2,3] | i + 0.1], j in [1,2,3] | i*j ];
+    c -> std_output;
+    return 0;
+}
+//CHECK:[[1.1 2.2 3.3] [2.1 4.2 6.3] [3.1 6.2 9.3]]

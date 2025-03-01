@@ -1,0 +1,41 @@
+
+/* These still fail as the grammar is parsing 1.2 as a tuple dot expression */
+/*
+function f() returns integer {
+    // Move declaration nodes away from tests
+    tuple(integer, integer) my_tuple = (1, 1);
+    real my_real;
+    integer my_int;
+
+    // Mixing up my_tuple.0 and my_real = 1.0
+    my_real = 1e2;
+    my_real = .2;
+    my_real = 1.2;
+
+    // These still fail
+    // my_tuple.1 = 0;
+    // my_int = my_tuple.2;
+
+    // Mixing up unary/binary expressions
+
+    my_int = -123;
+    my_int = +123;
+    my_int = 1 + 2;
+    my_int = 3+ 4;
+    my_int = 5 +6;
+    my_int = 7+8;
+    my_real = 0.2-.3;
+
+    return 0;
+}
+*/
+
+procedure main() returns integer {
+    integer x = 1+2;
+    real r = 1+.2;
+
+    x -> std_output;
+    r -> std_output;
+    return 0;
+}
+// CHECK:31.2

@@ -1,0 +1,33 @@
+procedure main() returns integer {
+    integer a = as<integer>(true);
+    integer b = as<integer>(false);
+    real c = as<real>(true) + 0.1;
+    real d = as<real>(false) + 0.1;
+    boolean e = as<boolean>('a');
+    boolean f = as<boolean>('\0');
+    integer g = as<integer>('a');
+    real h = as<real>('a') + 0.1;
+    boolean i = as<boolean>(7);
+    boolean j = as<boolean>(0);
+    character k = as<character>(97);
+    character l = as<character>(354);
+    real m = as<real>(100) + 0.1;
+    integer n = as<integer>(23.45);
+    a -> std_output; '\n' -> std_output;
+    b -> std_output; '\n' -> std_output;
+    c -> std_output; '\n' -> std_output;
+    d -> std_output; '\n' -> std_output;
+    e -> std_output; '\n' -> std_output;
+    f -> std_output; '\n' -> std_output;
+    g -> std_output; '\n' -> std_output;
+    h -> std_output; '\n' -> std_output;
+    i -> std_output; '\n' -> std_output;
+    j -> std_output; '\n' -> std_output;
+    k -> std_output; '\n' -> std_output;
+    l -> std_output; '\n' -> std_output;
+    m -> std_output; '\n' -> std_output;
+    n -> std_output; '\n' -> std_output;
+    return 0;
+}
+
+// CHECK_FILE:test.out

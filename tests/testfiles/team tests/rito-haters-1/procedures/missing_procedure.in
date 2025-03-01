@@ -1,0 +1,12 @@
+// Checks that the procedure could not be found.
+procedure t() returns boolean {
+    return true;
+}
+
+procedure main() returns integer {
+    boolean result = ta();
+    result -> std_output;
+    return 0;
+}
+
+//CHECK:SymbolError on Line 7

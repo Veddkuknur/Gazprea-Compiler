@@ -1,0 +1,16 @@
+typedef integer int;
+
+function lol() returns int {
+
+    return 1;
+}
+typedef boolean bool;
+const bool a = true;
+
+procedure main() returns integer {
+    if (lol()){
+    }
+    return 0;
+}
+
+//CHECK_FILE:procCallInIfTypeError.out

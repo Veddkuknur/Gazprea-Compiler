@@ -1,0 +1,19 @@
+typedef integer int;
+typedef tuple(int x, character c) chartesian;
+
+function tup_builder(chartesian t) returns chartesian {
+    return (t.x + 3, '\n');
+}
+
+procedure main() returns integer {
+    chartesian inp = (42, 'A');
+    chartesian out = tup_builder(inp);
+    inp.x -> std_output;
+    '\n' -> std_output;
+    out.1 -> std_output;
+    out.2 -> std_output;
+    return 0;
+}
+//CHECK:42
+//CHECK:45
+//CHECK:

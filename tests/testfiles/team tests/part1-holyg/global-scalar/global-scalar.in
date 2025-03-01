@@ -1,0 +1,7 @@
+const integer i = 7;
+procedure main() returns integer {
+    i -> std_output;
+    return 0;
+}
+
+// CHECK_FILE:test.out

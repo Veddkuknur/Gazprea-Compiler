@@ -1,0 +1,10 @@
+procedure main() returns integer {
+    real[3,2] a = 2;
+    integer[3,2] b = 3;
+    boolean[2,3] c = true;
+    character[2,3] d = 'a';
+    a -> std_output; b -> std_output; c-> std_output; d-> std_output;
+    return 0;
+}
+
+//CHECK_FILE:constRhsMatrix.out

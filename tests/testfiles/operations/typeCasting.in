@@ -1,0 +1,81 @@
+procedure main() returns integer {
+    boolean b_false = false;
+    var b_true = true;
+    character c_false;
+    character c_true;
+    integer i_false;
+    integer i_true;
+
+    character c_zero = '\0';
+    var c_nonzero = 'A';
+    boolean b_zero;
+    boolean b_nonzero;
+    integer i_zero;
+    integer i_nonzero;
+
+    var i_test_zero = 0;
+    integer i_test_nonzero = 100;
+    boolean b_test_zero;
+    boolean b_test_nonzero;
+    character c_test_zero;
+    character c_test_nonzero;
+
+    real r_value = 123.456;
+    integer i_truncated_value;
+
+    // Test boolean to character and integer conversions
+    c_false = as<character>(b_false);
+    c_true = as<character>(b_true);
+
+    i_false = as<integer>(b_false);
+    i_true = as<integer>(b_true);
+
+    c_false->std_output;
+    '\n'->std_output; // Expected: '\0'
+    c_true->std_output;
+    '\n'->std_output;  // Expected: 0x01
+    i_false->std_output;
+    '\n'->std_output; // Expected: 0
+    i_true->std_output;
+    '\n'->std_output;  // Expected: 1
+
+    // Test character to boolean and integer conversions
+    b_zero = as<boolean>(c_zero);
+    b_nonzero = as<boolean>(c_nonzero);
+
+    i_zero = as<integer>(c_zero);
+    i_nonzero = as<integer>(c_nonzero);
+
+    b_zero->std_output;
+    '\n'->std_output;     // Expected: false
+    b_nonzero->std_output;
+    '\n'->std_output;  // Expected: true
+    i_zero->std_output;
+    '\n'->std_output;     // Expected: 0 (ASCII of '\0')
+    i_nonzero->std_output;
+    '\n'->std_output;  // Expected: 65 (ASCII of 'A')
+
+    // Test integer to boolean and character conversions
+    b_test_zero = as<boolean>(i_test_zero);
+    b_test_nonzero = as<boolean>(i_test_nonzero);
+
+    c_test_zero = as<character>(i_test_zero);
+    c_test_nonzero = as<character>(i_test_nonzero);
+
+    b_test_zero->std_output;
+    '\n'->std_output;      // Expected: false
+    b_test_nonzero->std_output;
+    '\n'->std_output;   // Expected: true
+    c_test_zero->std_output;
+    '\n'->std_output;      // Expected: '\0'
+    c_test_nonzero->std_output;
+    '\n'->std_output;   // Expected: unsigned 100 mod 256
+    // Test real to integer conversion
+    i_truncated_value = as<integer>(r_value);
+    i_truncated_value->std_output;
+    '\n'->std_output; // Expected: 123
+
+    return 0;
+}
+
+//CHECK_FILE:typeCasting.out

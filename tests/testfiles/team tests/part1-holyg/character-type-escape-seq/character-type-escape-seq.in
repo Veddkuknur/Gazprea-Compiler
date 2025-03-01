@@ -1,0 +1,23 @@
+procedure main() returns integer {
+    character a = '\0';
+    character b = '\a';
+    character c = '\b';
+    character d = '\t';
+    character e = '\n';
+    character f = '\r';
+    character g = '\"';
+    character h = '\'';
+    character i = '\\';
+    f -> std_output;
+    g -> std_output;
+    h -> std_output;
+    i -> std_output;
+    a -> std_output;
+    b -> std_output;
+    c -> std_output;
+    d -> std_output;
+    e -> std_output;
+    return 0;
+}
+
+// CHECK_FILE:test.out

@@ -1,0 +1,12 @@
+//BUG:https://discord.com/channels/1273722490472103966/1312855152675524649
+procedure main() returns integer {
+    integer a = 0;
+    integer[10,3] i = [[1,31],2,3,4,5,6,7,8,9,10];
+    loop while (a < 30000000){
+        integer[10,3] i = [[1,31],2,3,4,5,6,7,8,9,10];
+        a = a +1;
+    }
+    i -> std_output;
+    return 0;
+}
+//CHECK:[[1 31 0] [2 2 2] [3 3 3] [4 4 4] [5 5 5] [6 6 6] [7 7 7] [8 8 8] [9 9 9] [10 10 10]]

@@ -1,0 +1,7 @@
+procedure main() returns integer {
+    integer[1] c = [100];
+    integer[2,2] a = [[1,c], [2,2]];
+    a -> std_output;
+    return 0;
+}
+//CHECK_FILE:test4.out

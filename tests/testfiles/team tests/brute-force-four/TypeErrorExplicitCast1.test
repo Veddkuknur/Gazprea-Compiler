@@ -1,0 +1,13 @@
+
+procedure main() returns integer {
+    // These are fine
+    const real good0 = as<real>(false);
+    const real good1 = as<real>('a');
+    const boolean good2 = as<boolean>(1);
+
+    // Can't cast a real to a bool/char
+    const boolean bad = as<boolean>(1.0);
+
+    return 0;
+}
+// CHECK:TypeError on Line 9

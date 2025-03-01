@@ -1,0 +1,8 @@
+/*/* */ const integer j = 0 /* */;
+
+procedure main() returns integer {
+    /* /* Comment here */ integer b = 20; */
+    return b;
+}
+
+//CHECK:SyntaxError on Line 4:

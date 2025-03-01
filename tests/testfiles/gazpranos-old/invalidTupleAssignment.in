@@ -1,0 +1,9 @@
+function f(integer x, integer  z) returns integer = x * -z;
+
+
+procedure main() returns integer {
+  3 + 2 + 5 + 5 + 6 + 9 + f(2,3) + c.5= 2;
+  return 0;
+}
+
+//CHECK_FILE:invalidTupleAssignment.out

@@ -1,0 +1,23 @@
+// BUG: Gazprea sol will get confused and thing things like t.1 and t.2 alias, 
+// despite clearly not aliasing (which was updated as per the discord)
+
+procedure p(var integer a, var integer b, integer c, integer d) {}
+
+procedure p2(var tuple(integer a, integer b) c, var integer d) {}
+
+procedure main() returns integer {
+integer x;
+integer y;
+integer z;
+tuple(integer, integer) t;
+call p(x, y, z, z);
+call p(t.1, t.2, x, x); // Sol will fail here
+call p(x, y, t.1, t.1);
+call p2(t, x);
+call p2(t, t.2); // Actual alias error
+
+return 0;
+}
+
+//CHECK_FILE:alias.out
+

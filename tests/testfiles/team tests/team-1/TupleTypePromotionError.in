@@ -1,0 +1,38 @@
+// Goated Test
+typedef integer int;
+typedef tuple(int, int) intT;
+typedef tuple(real, real) realT;
+typedef tuple( real, int) realIT;
+typedef real float;
+typedef character char;
+
+procedure test(int a) returns int {
+    return a;
+}
+
+function simpleFunc(realT a) returns int {
+    // Add stuff if you need
+    return 0;
+}
+
+procedure impureFunc( var realT a, intT b, intT c) {
+    true -> std_output;
+}
+
+procedure main() returns integer {
+    // Add stuff for testing here
+    intT t1;
+    realT t2;
+    const realT t3; const intT t4;
+
+    realIT t5;
+    // Call simpleFunc should work
+    simpleFunc( t1 ) -> std_output;
+    // Call impureFunc with correct args
+
+    call impureFunc( t2, t1, t4 );
+    // Will error out below
+    call impureFunc( t5, t1, t4);
+    return 0;
+}
+//CHECK_FILE:TupleTypePromotionError.out

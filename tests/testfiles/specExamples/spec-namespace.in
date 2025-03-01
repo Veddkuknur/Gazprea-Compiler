@@ -1,0 +1,11 @@
+function x() returns integer{ // "x" refers to this function in the global scope
+
+    return 6;
+}
+
+procedure main() returns integer {
+  integer x = 3; // "x" refers to this variable in the scope of main
+  return 0;
+}
+
+//CHECK_FILE:spec-namespace.out

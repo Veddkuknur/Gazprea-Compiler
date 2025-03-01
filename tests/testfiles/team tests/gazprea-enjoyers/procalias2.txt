@@ -1,0 +1,13 @@
+procedure p(var integer a, var integer b, const integer c, const integer d) returns integer{
+   return 0;
+}
+
+procedure main() returns integer {
+    integer x = 0;
+    integer y = 0;
+    integer z = 0;
+
+    call p(x, y, x, x);
+    return 0;
+}
+//CHECK_FILE:./procalias2.out

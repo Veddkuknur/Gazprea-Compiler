@@ -1,0 +1,18 @@
+//BUG:https://discord.com/channels/1273722490472103966/1312855152675524649
+procedure main() returns integer {
+    integer[2] aa = [1,2];
+    integer[10,3] a = [aa, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    real[2] bb = [1, 2];
+    real[10,3] b = [bb, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    boolean[2] cc = [true, true];
+    boolean[10,3] c = [cc, false, true, true, false, false, false, false, false, true];
+    character[2] dd = ['q', 'p'];
+    character[3, 3] d = [dd, ['3'], ['s']];
+    a -> std_output;
+    b -> std_output;
+    c -> std_output;
+    d ->std_output;
+    return 0;
+}
+//CHECK_FILE:vecToMatrixInit.out
+

@@ -1,0 +1,16 @@
+procedure main() returns int {
+    character i = 'a';
+    boolean j = 2<3;
+    integer a = 1;
+    j -> std_output;
+    return 0;
+}
+
+function main1() returns boolean {
+    character i = 'a';
+    boolean j = 2<3;
+    integer a = 1;
+    return true;
+}
+
+//CHECK_FILE:typeErrorInMain.out

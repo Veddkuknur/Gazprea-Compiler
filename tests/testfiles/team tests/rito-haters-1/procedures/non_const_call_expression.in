@@ -1,0 +1,10 @@
+procedure test(var integer v) {
+    v -> std_output;
+}
+
+procedure main() returns integer {
+    call test((3 + 4));
+    return 0;
+}
+
+//CHECK:TypeError on Line 6

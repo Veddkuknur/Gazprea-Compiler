@@ -1,0 +1,14 @@
+const a = -5..-1;
+const b = 1..5;
+const c = -100.. -2090;
+
+procedure main() returns integer {
+
+    a + b -> std_output;
+    c -> std_output;
+    "hope you can pass this\n" -> std_output;
+
+    return 0;
+}
+
+//CHECK_FILE:global_ranges.out

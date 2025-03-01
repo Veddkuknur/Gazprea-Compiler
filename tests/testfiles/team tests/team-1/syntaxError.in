@@ -1,0 +1,7 @@
+
+procedure main() returns integer {
+	tuple (integer, integer) tup = (1, 2);
+	integer i = (2, 3).1 + 2;
+}
+
+//CHECK_FILE:syntaxError.out

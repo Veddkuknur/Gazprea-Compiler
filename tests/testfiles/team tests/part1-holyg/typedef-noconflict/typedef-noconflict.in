@@ -1,0 +1,10 @@
+typedef integer z;
+procedure main() returns integer {
+    z z = 6;
+    z i = 7;
+    z -> std_output;
+    i -> std_output;
+    return 0;
+}
+
+// CHECK_FILE:test.out

@@ -1,0 +1,12 @@
+procedure main() returns integer {
+    tuple(integer a, real b) foo = (1, 2);
+    tuple(real c, real) bar = foo;
+
+    foo.a -> std_output;
+    foo.b -> std_output;
+
+    bar.a -> std_output;
+    return 0;
+}
+
+//CHECK:TypeError on Line 8:

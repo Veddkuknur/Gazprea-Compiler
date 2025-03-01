@@ -1,0 +1,12 @@
+procedure p(var tuple(integer, character) a, integer b) returns integer{
+   return 0;
+}
+
+procedure main() returns integer {
+    tuple(integer, character) a = (1, 'a');
+
+    call p(a, a.1);
+    1 -> std_output;
+    return 0;
+}
+//CHECK_FILE:./tupalias.out

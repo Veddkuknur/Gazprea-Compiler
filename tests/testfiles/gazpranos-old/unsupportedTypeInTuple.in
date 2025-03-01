@@ -1,0 +1,8 @@
+typedef integer int;
+procedure main() returns integer {
+    tuple(i, real) b = (234, 3.5);
+
+    return 0;
+}
+
+//CHECK_FILE:unsupportedTypeInTuple.out

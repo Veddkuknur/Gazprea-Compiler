@@ -1,0 +1,22 @@
+procedure main() returns integer {
+    character i = 'a';
+    boolean j = 2<3;
+    integer a = 1;
+    j -> std_output;
+    return 0;
+}
+
+function b () returns integer {
+    {
+        loop while (1<2) {
+            if (true){
+                procedure a(integer a) returns integer{
+
+                }
+            }
+        }
+    }
+    return 0;
+}
+
+//CHECK_FILE:procedureInFunction.out

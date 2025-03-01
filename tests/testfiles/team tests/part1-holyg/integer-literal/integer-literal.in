@@ -1,0 +1,34 @@
+procedure main() returns integer {
+    1234 -> std_output; '\n' -> std_output;
+    2 -> std_output; '\n' -> std_output;
+    0 -> std_output; '\n' -> std_output;
+    0002 -> std_output; '\n' -> std_output;
+    (7) -> std_output; '\n' -> std_output;
+    6+1 -> std_output; '\n' -> std_output;
+    8-1 -> std_output; '\n' -> std_output;
+    4*2 -> std_output; '\n' -> std_output;
+    4/2 -> std_output; '\n' -> std_output;
+    5%2 -> std_output; '\n' -> std_output;
+    2^3 -> std_output; '\n' -> std_output;
+    -3 -> std_output; '\n' -> std_output;
+    +3 -> std_output; '\n' -> std_output;
+    3 < 4 -> std_output; '\n' -> std_output;
+    4 < 3 -> std_output; '\n' -> std_output;
+    4 > 3 -> std_output; '\n' -> std_output;
+    3 > 4 -> std_output; '\n' -> std_output;
+    3 <= 4 -> std_output; '\n' -> std_output;
+    4 <= 3 -> std_output; '\n' -> std_output;
+    4 >= 3 -> std_output; '\n' -> std_output;
+    3 >= 4 -> std_output; '\n' -> std_output;
+    3 >= 3 -> std_output; '\n' -> std_output;
+    3 <= 3 -> std_output; '\n' -> std_output;
+    3 > 3 -> std_output; '\n' -> std_output;
+    3 < 3 -> std_output; '\n' -> std_output;
+    3 == 3 -> std_output; '\n' -> std_output;
+    3 == 2 -> std_output; '\n' -> std_output;
+    3 != 3 -> std_output; '\n' -> std_output;
+    3 != 2 -> std_output; '\n' -> std_output;
+    return 0;
+}
+
+// CHECK_FILE:test.out

@@ -1,0 +1,9 @@
+procedure bar(integer x) returns integer {
+    return x + 1;
+}
+
+procedure foo(var integer x) returns integer { return 1; }
+
+procedure main() returns integer;
+
+//CHECK:DefinitionError on Line 7:

@@ -1,0 +1,9 @@
+procedure main() returns integer {
+
+
+    integer we.don't.like.punctuation = 0;
+
+    return 0;
+}
+
+//CHECK_FILE:spec-bad-id5.out

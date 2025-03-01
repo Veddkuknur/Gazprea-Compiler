@@ -1,0 +1,15 @@
+procedure main() returns integer {
+    integer x = 0;  // Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    /* Nulla dictum tempor felis non auctor. 
+    Quisque at ullamcorper dui. 
+    Nullam eleifend tempor ligula eget ultrices. 
+    Donec tempus dolor nibh, sit amet cursus augue feugiat et. 
+    In convallis pulvinar nibh. Vestibulum venenatis lorem vitae tellus iaculis, 
+    ultrices vulputate quam congue. Aliquam aliquam eu nibh vitae placerat. 
+    Phasellus auctor suscipit risus.
+    */
+    integer y = 1;  /* Nulla facilisi. Nulla aliquam, hendrerit gravida massa enim eu leo. */
+    return 0;
+}
+
+// CHECK_FILE:test.out

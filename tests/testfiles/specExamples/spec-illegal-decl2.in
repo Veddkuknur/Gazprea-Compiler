@@ -1,0 +1,10 @@
+procedure main() returns integer {
+
+    integer i = i;
+
+    return 0;
+}
+
+
+
+//CHECK_FILE:spec-illegal-decl2.out

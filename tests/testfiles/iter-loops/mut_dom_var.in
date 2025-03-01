@@ -1,0 +1,19 @@
+procedure test(var integer a) {
+    a = a + 1;
+}
+
+procedure main() returns integer {
+
+    integer[3] a = [1,2,3];
+    loop i in a {
+
+        i -> std_output;
+        call test(i);
+        '\n' -> std_output;
+        i -> std_output;
+        '\n' -> std_output;
+    }
+    return 0;
+}
+
+//CHECK_FILE:mut_dom_var.out

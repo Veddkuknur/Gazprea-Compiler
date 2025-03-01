@@ -1,0 +1,7 @@
+function f() returns boolean {}
+
+procedure main() returns integer {
+    return 0;
+}
+
+// CHECK_FILE:test.out

@@ -1,0 +1,30 @@
+
+procedure main() returns integer {
+    integer a = 10;
+    integer b= 20;
+    integer c= 60;
+    integer d=2;
+
+    a+b->std_output;
+    b-a->std_output;
+    7*8+c/d^2->std_output;
+    c=c/a+4;
+    c->std_output;
+    a^2->std_output;
+    a=a+1;
+    a%2->std_output;
+    -b->std_output;
+    c==d->std_output;
+    d<5->std_output;
+    20>=b->std_output;
+    20<=b->std_output;
+    20>b->std_output;
+    60!=c->std_output;
+    a=b;
+    b->std_output;
+    a->std_output;
+
+    return 0;
+}
+
+//CHECK_FILE:integerArith.out

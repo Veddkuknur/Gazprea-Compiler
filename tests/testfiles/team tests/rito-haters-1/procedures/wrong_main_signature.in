@@ -1,0 +1,6 @@
+// This test ensures your main method matches the correct signature.
+procedure main() {
+
+}
+
+//CHECK_FILE:wrong_main_signature.out

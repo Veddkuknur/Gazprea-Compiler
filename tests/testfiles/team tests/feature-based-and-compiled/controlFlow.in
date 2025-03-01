@@ -1,0 +1,43 @@
+procedure main() returns integer {
+    integer i = 0;
+
+    if (1 > 0) {
+        1 -> std_output;
+    } else {
+        0 -> std_output;
+    }
+
+    '\n' -> std_output;
+
+    loop while (i < 10) {
+        i = i + 1;
+        i -> std_output; '\n' -> std_output;
+    }
+
+    i = 0;
+
+    loop {
+        i = i + 1;
+        i -> std_output; '\n' -> std_output;
+        if (i == 10) {
+            break;
+        }
+    }
+
+    i = 0;
+
+    loop {
+        i = i + 1;
+        if (i % 2 == 1) {
+            continue;
+        }
+        i -> std_output; '\n' -> std_output;
+        if (i == 10) {
+            break;
+        }
+    }
+
+    return 0;
+}
+
+//CHECK_FILE:controlFlow.out

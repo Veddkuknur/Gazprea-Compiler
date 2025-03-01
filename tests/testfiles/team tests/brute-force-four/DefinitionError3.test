@@ -1,0 +1,11 @@
+procedure unobtainio() returns integer;
+
+procedure main() returns integer {
+
+    // don't even need to call func/proc to have not-implemented error
+
+    return 0;
+}
+
+
+// CHECK:DefinitionError on Line 1

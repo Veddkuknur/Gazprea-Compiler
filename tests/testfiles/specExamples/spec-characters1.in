@@ -1,0 +1,30 @@
+procedure main() returns integer {
+
+    character a = '\0';
+    character b = '\a';
+    character c = '\b';
+    character d = '\t';
+    character e = '\n';
+    character f = '\r';
+    character g = '\"';
+    character h = '\'';
+    character i = '\\';
+
+    character a1 = ('g');
+    boolean b1 = a == b;
+    boolean c1 = h != g;
+    boolean d1 = h == h;
+    boolean e1 = f != c;
+
+    a1 -> std_output;
+    b1 -> std_output;
+    c1 -> std_output;
+    d1 -> std_output;
+    e1 -> std_output;
+    '\n' -> std_output;
+
+
+    return 0;
+}
+
+//CHECK_FILE:spec-characters1.out

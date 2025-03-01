@@ -1,0 +1,18 @@
+procedure main() returns integer {
+    integer i = 0;
+    loop {
+        i -> std_output;
+        if (i == 5){
+            if (i == 5){
+                {
+                    break;
+                }
+            }
+        }
+        i = i + 1;
+    }
+    return 0;
+}
+
+
+// CHECK_FILE:test.out

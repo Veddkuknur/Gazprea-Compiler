@@ -1,0 +1,6 @@
+procedure main() returns integer {
+
+    bool a = [1,false];
+    return 0;
+}
+//CHECK:TypeError on Line 3: Unsupported base type for user defined type

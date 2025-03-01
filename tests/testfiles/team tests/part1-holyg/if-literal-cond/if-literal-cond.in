@@ -1,0 +1,9 @@
+procedure main() returns integer {
+    integer i = 512;
+    if (256 != 512) {
+        i -> std_output;
+    }
+    return 0;
+}
+
+// CHECK_FILE:test.out

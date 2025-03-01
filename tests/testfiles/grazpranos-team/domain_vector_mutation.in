@@ -1,0 +1,20 @@
+procedure test(var integer[5] a) {
+    a = a+1;
+    a -> std_output;
+    '\n' -> std_output;
+}
+
+const a = 1..5;
+procedure main() returns integer {
+
+    integer[5] a = a;
+    loop i in a {
+
+        a -> std_output;
+        '\n' -> std_output;
+        call test(a);
+    }
+    return 0;
+}
+
+//CHECK_FILE:domain_vector_mutation.out

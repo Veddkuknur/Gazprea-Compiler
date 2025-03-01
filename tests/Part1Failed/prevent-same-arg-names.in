@@ -1,0 +1,9 @@
+// Prevents a function from having two arguments that are the same.
+function a(integer a, real a) returns integer {
+    return 3;
+}
+
+procedure main() returns integer {
+    return 0;
+}
+//CHECK:SymbolError on Line 2

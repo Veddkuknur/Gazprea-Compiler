@@ -1,0 +1,5 @@
+procedure main() returns integer {
+    real bad = . ;
+    return 0;
+}
+//CHECK:SyntaxError on Line 2:

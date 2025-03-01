@@ -1,0 +1,7 @@
+procedure main() returns integer {
+    integer x = 467;
+    real y = -1.6438e10;
+    format(x) || format(y) ->std_output;
+    return 0;
+}
+//CHECK:467-1.6438e+10

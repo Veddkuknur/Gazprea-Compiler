@@ -1,0 +1,8 @@
+procedure main() returns integer {
+    const tuple(integer, integer) t = (2, 4);
+    t.1 = 3;
+    t.1 -> std_output;
+    return 0;
+}
+
+// CHECK_FILE:test.out

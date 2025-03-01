@@ -1,0 +1,12 @@
+typedef integer int;
+typedef tuple(int x, character c) chartesian;
+
+function tup_builder(chartesian t) returns chartesian {
+    return (t.x + 3, '\n');
+}
+
+procedure main() returns integer {
+    tup_builder((2, '3')) -> std_output;
+    return 0;
+}
+//CHECK:TypeError on Line 9:

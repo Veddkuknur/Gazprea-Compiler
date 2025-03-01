@@ -1,0 +1,13 @@
+const integer a = 1;
+function times_two(integer x) returns integer {
+    integer a = 1;
+    a = a +1;
+    return a;
+}
+
+integer x = 1;
+procedure main() returns integer {
+    return 0;
+}
+
+//CHECK_FILE:globalDecl.out

@@ -1,0 +1,15 @@
+procedure g() {
+    return;
+}
+
+function f(integer i) returns integer {
+    call g();
+    return i + 1;
+}
+
+procedure main() returns integer {
+    f(1) -> std_output;
+    return 0;
+}
+
+// CHECK_FILE:test.out

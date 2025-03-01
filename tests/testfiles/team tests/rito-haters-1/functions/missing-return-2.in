@@ -1,0 +1,14 @@
+// Checks that we are making sure functions are closed.
+
+function test() returns integer {
+    if (true) {
+
+    } else {
+        return 0;
+    }
+}
+
+procedure main() returns integer {
+    return 0;
+}
+//CHECK:ReturnError on Line 3

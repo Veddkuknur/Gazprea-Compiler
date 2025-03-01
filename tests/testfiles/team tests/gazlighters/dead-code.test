@@ -1,0 +1,13 @@
+procedure main() returns integer {
+  if (true) {
+    'w' -> std_output;
+    return 0;
+    'l' -> std_output;
+  }
+
+  return 0;
+
+  'z' -> std_output;
+}
+
+//CHECK:w

@@ -1,0 +1,16 @@
+function bar(integer x, integer y) returns integer { 
+    return x; 
+}
+
+procedure foo(integer x) returns integer { 
+    return x; 
+}
+
+procedure main() returns integer {
+    integer y = 7;
+    integer x = bar(y, foo(y));
+    x -> std_output;
+    return 0;
+}
+
+// CHECK_FILE:test.out

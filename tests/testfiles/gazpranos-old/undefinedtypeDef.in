@@ -1,0 +1,81 @@
+const integer a = 1;
+function times(integer x, integer y, integer z) returns integer {
+    integer a = 1;
+    integer x = x;
+    integer y = y;
+    integer z = z;
+    a = a +1;
+    x = x+y+z;
+    return a;
+}
+{
+    integer a = 1;
+}
+typedef integer a;
+typedef integer int;
+const a int = 1;
+function times_two(integer x) returns integer {
+    integer a = 1;
+    loop {
+        break;
+        continue;
+    }
+    a = a +1;
+    return a;
+}
+procedure main() returns integer {
+    character i = 'a';
+    int a = 1;
+    real f = 1.1;
+    character nl  = '\n';
+    i->std_output;
+    nl->std_output;
+    i = '1';
+    i->std_output;
+    nl->std_output;
+    nl->std_output;
+    i = '*';
+    i->std_output;
+    nl->std_output;
+    i = '\n';
+    i->std_output;
+    nl->std_output;
+    i  = '\0';
+    nl->std_output;
+    i  = '\a';
+    nl->std_output;
+    i  = '\b';
+    nl->std_output;
+    i  = '\n';
+    i->std_output;
+    nl->std_output;
+    i  = '\r';
+    nl->std_output;
+    i  = '"';
+    i->std_output;
+    nl->std_output;
+    i  = '\'';
+    i->std_output;
+    nl->std_output;
+    i  = '\\';
+    i->std_output;
+    nl->std_output;
+    a->std_output;
+    a = 10;
+    a->std_output;
+    nl->std_output;
+    f->std_output;
+    nl->std_output;
+
+    {
+        loop {
+            if (2<3){
+                main b = 1;
+            }
+        }
+
+    }
+    return 0;
+}
+
+//CHECK_FILE:undefinedtypeDef.out

@@ -1,0 +1,9 @@
+procedure main() returns integer {
+    integer x = 0;
+    const integer y = 0;
+    const tuple(integer, integer) t = (2, 4);
+    x, y = t;
+    return 0;
+}
+
+// CHECK_FILE:test.out

@@ -1,0 +1,13 @@
+
+procedure main() returns integer {
+
+    if (true) {
+        return 0;
+    }
+    else {
+        return 0;
+    }
+}
+
+
+//CHECK_FILE:reachable-ret1.out

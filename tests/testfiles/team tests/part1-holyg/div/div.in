@@ -1,0 +1,11 @@
+procedure main() returns integer {
+    integer g = 1244612349;
+    integer v = 1962248827 / 470330470;
+    integer p = 1541274939 / (1199831720);
+    2047191829 + v - (81205372) -> std_output;
+    '\n' -> std_output;
+    p + 2037308973 * p / p -> std_output;
+    return 0;
+}
+
+// CHECK_FILE:test.out

@@ -1,0 +1,9 @@
+typedef integer int;
+procedure main() returns integer {
+    int a = (234, 3.5);
+    tuple(integer, real) b = (234, 3.5);
+
+    return 0;
+}
+
+//CHECK_FILE:tupleAssignmentToInt.out

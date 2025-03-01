@@ -1,0 +1,22 @@
+// This is a bug on reference solution.
+typedef integer int;
+
+procedure main() returns integer {
+    tuple(int a, int b)  ftp = (2, 3);
+    int g;
+    integer x;
+    x, g = ftp;
+    x -> std_output;
+    '\n' -> std_output;
+    g -> std_output;
+    '\n' -> std_output;
+    ftp.2, ftp.1 = ftp;
+    ftp.a -> std_output;
+    '\n' -> std_output;
+    ftp.2 -> std_output;
+    return 0;
+}
+//CHECK:2
+//CHECK:3
+//CHECK:3
+//CHECK:2

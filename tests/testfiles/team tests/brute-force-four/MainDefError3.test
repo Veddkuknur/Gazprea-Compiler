@@ -1,0 +1,7 @@
+// function main
+
+function main() returns integer {
+    return 0;
+}
+
+// CHECK_FILE:MainDefError3.out

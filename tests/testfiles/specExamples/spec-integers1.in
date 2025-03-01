@@ -1,0 +1,45 @@
+procedure main() returns integer {
+
+    const integer a = 123;
+    var integer b = 456;
+    integer c = 789;
+    const d = 1;
+    var y = 2;
+    integer x = -43;
+    integer z = +52;
+
+    (a) -> std_output;
+    '\n' -> std_output;
+    a + b -> std_output;
+    '\n' -> std_output;
+    a - b -> std_output;
+    '\n' -> std_output;
+    c * x -> std_output;
+    '\n' -> std_output;
+    c / x -> std_output;
+    '\n' -> std_output;
+    z % x -> std_output;
+    '\n' -> std_output;
+    x ^ y -> std_output;
+    '\n' -> std_output;
+    -a -> std_output;
+    '\n' -> std_output;
+    +a -> std_output;
+    '\n' -> std_output;
+    a < b -> std_output;
+    '\n' -> std_output;
+    a > b -> std_output;
+    '\n' -> std_output;
+    a <= b -> std_output;
+    '\n' -> std_output;
+    a >= a -> std_output;
+    '\n' -> std_output;
+    d == d -> std_output;
+    '\n' -> std_output;
+    d != -d -> std_output;
+    '\n' -> std_output;
+
+    return 0;
+}
+
+//CHECK_FILE:spec-integers1.out

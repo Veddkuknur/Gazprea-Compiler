@@ -1,0 +1,9 @@
+procedure f(integer x, integer  z) returns integer { return x*z;}
+
+procedure main() returns integer {
+  integer y = f(13);
+  /* Can use this in main, even though the definition is below */
+  return 0;
+}
+
+//CHECK_FILE:incorrectNoOFParamsInFunctionCall.out

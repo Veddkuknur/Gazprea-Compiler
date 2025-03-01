@@ -1,0 +1,21 @@
+const integer a =1;
+function times_two(integer x) returns integer {
+    integer a = 1;
+    a = a +1;
+    return a;
+}
+
+const integer x = 1;
+procedure main() returns integer {
+    integer a = 4;
+    integer b = 5;
+    b->std_output;
+    if (true){
+        boolean c = true;
+        c->std_output;
+        boolean d = true;
+    }
+    return 0;
+}
+
+//CHECK_FILE:declAfterOtherStatement.out

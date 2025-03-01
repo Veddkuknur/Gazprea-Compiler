@@ -1,0 +1,9 @@
+procedure main() returns integer {
+    integer x = 0;
+    integer y = 0;
+    tuple(integer, integer, integer) t = (6, 3, 0);
+    x, y = t;
+    return 0;
+}
+
+// CHECK_FILE:test.out

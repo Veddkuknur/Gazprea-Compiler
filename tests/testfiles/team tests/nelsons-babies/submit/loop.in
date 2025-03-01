@@ -1,0 +1,22 @@
+// NOTE: The solution fails this test case, but it is correct as per the discord
+//       post: "[BUG] Mid Function Return"
+
+function f() returns integer {
+    if (true) return 0; else return 1;
+}
+
+procedure main() returns integer {
+    loop {
+        loop {
+            loop {
+                '\'' -> std_output;
+                return 0;
+                '\'' -> std_output;
+            }
+        }
+    }
+
+    return 0;
+}
+
+// CHECK:'

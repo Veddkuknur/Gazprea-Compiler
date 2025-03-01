@@ -1,0 +1,20 @@
+const integer a =3342;
+const real b =4.5;
+
+const boolean c = true;
+
+
+procedure main() returns integer {
+    var integer x = 1056;
+    var character a = 'a';
+    const c = 12 + as<integer>(c);
+    a->std_output;
+    b->std_output;
+    c->std_output;
+
+    '\n' -> std_output;
+
+    return 0;
+}
+
+//CHECK_FILE:declareGlobals.out

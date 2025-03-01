@@ -1,0 +1,6 @@
+procedure main() returns integer {
+    10 / (0-6) -> std_output;
+    return 0;
+}
+
+// CHECK_FILE:test.out

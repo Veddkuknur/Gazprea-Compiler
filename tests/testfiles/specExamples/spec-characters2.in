@@ -1,0 +1,9 @@
+procedure main() returns integer {
+
+    character char = 'a' + 'b';
+    char -> std_output;
+
+    return 0;
+}
+
+//CHECK_FILE:spec-characters2.out

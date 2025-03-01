@@ -1,0 +1,8 @@
+typedef integer i;
+7 -> std_output;
+
+procedure main() returns integer {
+    return 0;
+}
+
+// CHECK_FILE:test.out

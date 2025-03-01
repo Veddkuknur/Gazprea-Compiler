@@ -1,0 +1,14 @@
+procedure main() returns integer {
+    integer[3] aa = [1,2,3];
+    integer[10,3] a = [aa, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    real[11, 4] b = a;
+    a -> std_output; '\n'->std_output;
+    a[10, 2] = 10000;
+    a->std_output;'\n' ->std_output;
+    b->std_output;'\n' ->std_output;
+    b[10,4] = 1.356;
+    b->std_output;
+    return 0;
+}
+//CHECK_FILE:matrixAssAndIndexAss.out
+
